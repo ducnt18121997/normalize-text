@@ -288,15 +288,12 @@ def classify_text(list_token):
                 if len(token) == 1:
                     label.append('LSEQ')
                 else:
-                    if (token.lower() in LWRD) or (token.lower() in PERSON) or (token.lower() in BRANCH):
-                        label.append('LWRD')
-                    elif (token.upper() in LABB)  or (token.upper() in MONY)  or (token.lower() in UNIT):
+                    if (token.upper() in LABB)  or (token.upper() in MONY)  or (token.lower() in UNIT):
                         label.append('LABB')
+                    elif token == token.upper():
+                        label.append('LSEQ')
                     else:
-                        if token == token.upper():
-                            label.append('LSEQ')
-                        else:
-                            label.append('LWRD')
+                        label.append('LWRD')
             #Others
             else:
                 label.append('OTHERS')

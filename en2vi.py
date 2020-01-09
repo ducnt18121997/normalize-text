@@ -263,5 +263,5 @@ def en2vi(en_word):
             for char in en_word:
               if char.upper() in (LSEQ_DICT.keys()):
                   result += LSEQ_DICT[char.upper()] + ' '
-                      
+    result = ' '.join(result.split())   
     return result

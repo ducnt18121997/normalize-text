@@ -40,8 +40,8 @@ def split_token(text):
         # tách các từ bị dính các dấu ;/()'"
         # "đã xong.Viện" => "đã xong . Viện", "HN(Số 36)" => "HN ( Số 36)"
         
-        #split_punc = '\.|\,|\;|\/|\(|\)|\!|\?|\…|\:|\%|\-|\%|\+'
-        split_punc = '\.|\,|\…|\;|\/|\(|\)|\!|\?|\'|\"|\“|\”|\:|\-|\+|\*|\\|\_|\&|\%|\^|\[|\]|\{|\}|\=|\#|\@|\`|\~'
+        #split_punc = '\.|\,|\;|\/|\(|\)|\!|\?|\…|\:|\%|\-|\+'
+        split_punc = '\.|\,|\…|\;|\/|\(|\)|\!|\?|\'|\"|\“|\”|\:|\+|\*|\\|\_|\&|\%|\^|\[|\]|\{|\}|\=|\#|\@|\`|\~'
         token = re.sub(r'(?P<id>[{}])(?P<id1>{})(?P<id2>[{}])'.format(charset, split_punc, charset),
                        lambda x: x.group('id') + ' ' + x.group('id1') + ' ' + x.group('id2'), token)
         token = re.sub(r'(?P<id>[{}]|\d+)(?P<id1>{})'.format(charset, split_punc),
@@ -137,7 +137,7 @@ def split_token(text):
                          'ùy': 'uỳ', 'úy': 'uý', 'ụy': 'uỵ', 'ũy': 'uỹ', 'ủy': 'uỷ'}
     text = re.sub(r'(?P<id>{})'.format('|'.join(change_phone_dict.keys())),
                   lambda x: change_phone_dict[x.group('id')], text)
-    
+
     return text
     
 def split_compound_NSWs(text):
@@ -163,18 +163,25 @@ def split_compound_NSWs(text):
                 list_tokens[i] = token
     
     text = ' '.join(list_tokens)
+    return text
+
+def edit_token(text):
     list_tokens = text.split()
     for i, token in enumerate(list_tokens):
         if re.match(r'([0-9])', token):
             if ('/' in token) and (',' in token):
-                token = re.sub(r'\,',' , ',token)
+                list_tokens[i] = re.sub(r'\,',' , ',token)
             elif ('/' in token) and (':' in token):
-                token = re.sub(r'\:', ' : ', token)
+                list_tokens[i] = re.sub(r'\:', ' : ', token)
             elif ('/' in token) and ('-' in token) and (('.' in token) or (',' in token)):
-                token = re.sun(r'\-', ' đến ', token)
+                list_tokens[i] = re.sun(r'\-', ' đến ', token)
             elif ('.' in token) and (',' in token):
-                token = re.sub(r'\,', ' , ', token)
-    
+                list_tokens[i] = re.sub(r'\,', ' , ', token)
+        else:
+            if '-' in token:
+                token_ = token.split('-')
+                if '' in token_:
+                    list_tokens[i] = token.replace('-',' - ')
     text = ' '.join(list_tokens)
     return text
 
@@ -204,11 +211,16 @@ def get_token(text):
     return list_token
 
 def convert_text(text):
+    text = re.sub('–','-',text)
     text = re.sub('\r',' gachcheor ',text)
     text = re.sub('\t',' gachcheot ',text)
+    
     text = split_compound_NSWs(text)
     text = split_token(text)
+    
     text = re.sub('gachcheor', ' , ', text)
     text = re.sub('gachcheot', ' , ', text)
+    
+    text = edit_token(text)
     list_token = get_token(text)
     return list_token

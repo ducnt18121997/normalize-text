@@ -297,7 +297,15 @@ def LWRD2words(lwrd_string):
     elif lwrd_string in EN2VI_DICT.keys():
         result = BRANCH_DICT[lwrd_string]
     else:
-        result = en2vi(lwrd_string)
+        if '-' in lwrd_string:
+            lwrd_arr = lwrd_string.split('-')
+            for i in range(len(lwrd_arr)):
+                if lwrd_arr[i].lower() in list_vietnamese_words:
+                    result += lwrd_arr[i] + ' '
+                else:
+                    result += LWRD2words(lwrd_arr[i]) + ' '
+        else:
+            result = en2vi(lwrd_string)
     return result
 
 #LSEQ class
@@ -422,4 +430,3 @@ def CSEQ2words(cseq_string):
 def NONE2words(none_string):
     result = ''
     return result
-
