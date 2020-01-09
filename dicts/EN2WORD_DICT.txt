@@ -1,0 +1,26 @@
+a|ây
+b|bi
+c|ci
+d|đi
+e|i
+f|ép
+g|gi
+h|ết
+i|ai
+j|giây
+k|cây
+l|eo
+m|em
+n|en
+o|âu
+p|pi
+q|qiu
+r|a
+s|ét
+t|ti
+u|diu
+v|vi
+w|đáp liu
+x|ích
+y|goai
+z|gi

@@ -1,0 +1,879 @@
+ABC|công ty truyền thông abc
+ADB|ngân hàng phát triển châu á
+ADN|a đê en
+ANĐT|an ninh điều tra
+ATGT|an toàn giao thông
+ATM|máy rút tiền tự động
+ATNĐ|áp thấp nhiệt đới
+ATTT|an toàn trật tự
+ATTTGT|an toàn trật tự giao thông
+ATVSTP|an toàn vệ sinh thực phẩm
+BBCVT|bộ bưu chính viễn thông
+BBT|ban biên tập
+BC|bán công, bưu chính
+BCĐ|ban chỉ đạo
+BCĐĐMĐH|ban chỉ đạo đổi mới đại học
+BCĐPCTNTƯ|ban chỉ đạo phòng chống tham nhũng trung ương
+BCĐQG|ban chỉ đạo quốc gia
+BCĐT|bưu chính điện tử
+BCĐTS|ban chỉ đạo tuyển sinh
+BCHCD|ban chỉ huy chiến dịch
+BCHQS|bộ chỉ huy quân sự
+BCHTƯ|ban chỉ huy trung ương
+BCHTW|ban chỉ huy trung ương
+BCVT|bưu chính viễn thông
+BD|bình dương
+BĐ|bóng đá
+BĐN|bồ đào nha
+BĐS|bất động sản
+BĐVN|bóng đá việt nam
+BGD|bộ giáo dục
+BGDĐT|bộ giáo dục và đào tạo
+BGH|ban giám hiệu
+BGK|ban giám khảo
+BH|bảo hiểm
+BHĐC|bán hàng đa cấp
+BHL|ban huấn luyện
+BHV|ban huấn luyện
+BHXH|bảo hiểm xã hội
+BHYT|bảo hiểm y tế
+BIDV|ngân hàng đầu tư và phát triển việt nam
+BK|bách khoa
+BKS|ban kiểm soát, biển kiểm soát
+BLHS|bộ luật hình sự
+BP|biên phòng
+BQL|ban quản lý
+BQLDA|ban quản lý dự án
+BSC|công ty chứng khoán ngân hàng đầu tư & phát triển việt nam
+BT|bảo trì, bộ trưởng
+BTA|hiệp định thương mại việt - mỹ
+BTBNN|bảo trợ bệnh nhân nghèo
+BTC|ban tổ chức
+BTS|ban tuyển sinh
+BTV|biên tập viên
+BTVH|bổ túc văn hóa
+BV|bện viện
+BVĐK|bệnh viện đa khoa
+BVTV|bảo vệ thực vật
+BX|bến xe
+BXL|bộ xử lý
+CAHN|công an hà nội
+CAND|công an nhân dân
+CATP|công an thành phố
+CB|cơ bản, cán bộ, chế biến
+CBCC|cán bộ công chức
+CBCNV|cán bộ công nhân viên
+CBQLGD|cán bộ quản lý giáo dục
+CCB|cựu chiến binh
+CCHC|cải cách hành chính
+CĐ|cao đẳng
+CĐDC|chất độc da cam
+CĐSP|cao đẳng sư phạm
+CĐV|cổ động viên
+CG|nhóm các nhà tài trợ cho việt nam
+CHDC|cộng hòa dân chủ
+CHDCND|cộng hòa dân chủ nhân dân
+CHLB|cộng hòa liên bang
+CHND|cộng hòa nhân dân
+CK|chứng khoán
+CLB|câu lạc bộ
+CMND|chứng minh nhân dân
+CNCN|chi nhánh cấp nước
+CNH|công nghiệp hóa
+CNKT|công nhân kỹ thuật
+CNQSDĐ|chứng nhận quyền sử dụng đất
+CNSH|công nghệ sinh học
+CNTN|cử nhân tài năng
+CNTT|công nghệ thông tin
+CNV|công nhân viên
+CNVC|công nhân viên chức
+COPD|bệnh phổi tắc nghẽn mãn tính
+CP|cổ phần, cổ phiếu
+CPE|hợp đồng lao động đầu tiên
+CPH|cổ phần hóa
+CPP|đảng nhân dân campuchia
+CPSXTM|cổ phần xây dựng sản xuất thương mại
+CPTD|cổ phiếu tự do
+CPTTT|chậm phát triển trí tuệ
+CPXD|cấp phép xây dựng
+CQĐT|cơ quan điều tra
+CSCĐ|cảnh sát cơ động
+CSDC|cảnh sát dã chiến
+CSDL|cơ sở dữ liệu
+CSĐN|cảnh sát đặc nhiệm
+CSĐT|cảnh sát điều tra, cơ sở đào tạo
+CSĐTLX|cơ sở đào tạo lái xe
+CSĐTTP|cảnh sát điều tra tội phạm
+CSĐTTPMT|cảnh sát điều tra tội phạm ma túy
+CSG|cảng sài gòn
+CSGT|cảnh sát giao thông
+CSHS|cảnh sát hình sự
+CSKH|chăm sóc khách hàng
+CSKT|cảnh sát kinh tế
+CSKV|cảnh sát khu vực
+CSPCTPMT|cục cảnh sát phòng chống tội phạm ma túy
+CSPK|công suất phản kháng
+CSQLHC|cảnh sát quản lý hành chính
+CSSD|đảng xã hội dân chủ cánh tả
+CSSX|cơ sở sản xuất
+CSVC|cơ sở vật chất
+CSVL|cao su việt - lào
+CSVN|cộng sản việt nam
+CSXH|chính sách xã hội
+CT|chính trị, công ty
+CTCC|công trình công cộng
+CTCH|chấn thương chỉnh hình
+CTCK|công ty chứng khoán
+CTCLQG|chương trình chống lao quốc gia
+CTCN|công ty cấp nước
+CTCP|công ty cổ phần
+CTĐ|chữ thập đỏ
+CTĐL|công ty điện lực
+CTN|chuyển tiền nhanh
+CTSN|chấn thương sọ não
+CTTC|cho thuê tài chính
+CTTH|chương trình truyền hình
+CTTNHH|công ty trách nhiệm hữu hạn
+CTTT|chương trình tiên tiến
+CTV|cộng tác viên
+CTXH|công tác xã hội
+CV|chuyên viên
+CVPM|công viên phần mềm
+CX|cư xá
+DAGTĐT|dự án giao thông đô thị
+ĐATP|đông á - thép pomina
+ĐB|đại biểu, đồng bằng
+ĐBDT|đồng bào dân tộc
+ĐBP|điện biên phủ
+ĐBQH|đại biểu quốc hội
+ĐBSCL|đồng bằng sông cửu long
+ĐBTN|đại biểu thanh niên
+ĐBTSXB|đánh bắt thủy sản xa bờ
+ĐC|địa chỉ, điều chế
+DCCH|dân chủ cộng hòa
+ĐCS|đảng cộng sản
+ĐCSTQ|đảng cộng sản trung quốc
+ĐCSVN|đảng cộng sản việt nam
+DD|dân dụng, dinh dưỡng
+ĐD|đại diện
+ĐĐ|động đất, đất đai
+DDVN|duyên dáng việt nam
+ĐH|đại học
+ĐHBC|đại học bán công
+ĐHBK|đại học bách khoa
+ĐHBKHCM|đại học bách khoa thành phố hồ chí minh
+ĐHBKHN|đại học bách khoa hà nội
+ĐHBKTPHCM|đại học bách khoa thành phố hồ chí minh
+ĐHCĐ|đại hội cổ đông, đại học công đoàn
+ĐHCLC|đại học chất lượng cao
+ĐHCN|đại học công nghệ
+ĐHCT|đại học cần thơ
+ĐHĐCQT|đại học đẳng cấp quốc tế
+ĐHĐD|đại học đông dương
+ĐHDL|đại học dân lập
+ĐHĐN|đại học đà nẵng
+ĐHGTVT|đại học giao thông vận tải
+ĐHHB|đại học hồng bàng
+ĐHHVN|đại học hàng hải việt nam
+ĐHKH|đại học khoa học
+ĐHKHTN|đại học khoa học tự nhiên
+ĐHKHTNHN|đại học khoa học tự nhiên hà nội
+ĐHKHXH|đại học khoa học xã hội
+ĐHKT|đại học kỹ thuật
+DHKTCN|đại học kỹ thuật công nghệ
+ĐHKTCN|đại học kỹ thuật công nghệ
+ĐHKTQD|đại học kinh tế quốc dân
+ĐHN|điện hạt nhân, đồng hồ nước
+ĐHNT|đại học nha trang
+ĐHQG|đại học quốc gia
+ĐHQGHN|đại học quốc gia hà nội
+DHS|du học sinh
+ĐHSP|đại học sư phạm
+ĐK|đăng ký
+ĐKDT|đăng ký dự thi
+ĐKĐT|điện kế điện tử
+ĐKHK|đăng ký hộ khẩu
+ĐKKD|đăng ký kinh doanh
+ĐKKH|đăng ký kết hôn
+ĐKVĐ|đương kim vô địch
+ĐKVN|điền kinh việt nam
+ĐKXT|đăng ký xét tuyển
+DL|du lịch
+ĐL|đo lường
+ĐLTP|điện kế điện tử
+ĐMN|đá mỹ nghệ
+DN|doanh nghiệp
+ĐN|đồng nai, đà nẵng
+ĐNA|đông nam á
+ĐNÁ|đông nam á
+DNNN|doanh nghiệp nhà nước
+DNT|doanh nghiệp trẻ
+DNTN|doanh nghiệp tư nhân
+DNVN|doanh nghiệp việt nam
+DNVVN|doanh nghiệp vừa và nhỏ
+ĐRL|điểm rèn luyện
+DS|dân số
+ĐS|đường sắt
+ĐSQ|đại sứ quán
+DT|dự tuyển
+ĐT|đào tạo
+ĐTA|đồng tính ái
+ĐTB|điểm trung bình
+ĐTĐ|đái tháo đường
+ĐTDĐ|điện thoại di động
+DTHT|dạy thêm học thêm
+ĐTHVN|đài truyền hình việt nam
+ĐTLA|đồng tính luyến ái
+ĐTLT|đào tạo liên thông
+ĐTNN|đầu tư nước ngoài
+DTQG|đội tuyển quốc gia
+ĐTQG|đội tuyển quốc gia
+ĐTTX|đào tạo từ xa
+ĐTTXQM|đào tạo từ xa qua mạng
+ĐTV|điều tra viên
+ĐTVHD|động thực vật hoang dã
+ĐTVN|đội tuyển việt nam
+ĐTXDCB|đầu tư xây dựng cơ bả
+DV|dịch vụ, diễn viên
+ĐV|đoàn viên
+ĐVHT|đơn vị học trình
+DVTMCM|dịch vụ thương mại cà mau
+ĐVTN|đoàn viên thanh niên
+DVTT|dịch vụ trực tuyến, dịch vụ thông tin
+ĐVTTN|đoàn viên thanh thiếu nhi
+ĐVƯT|đoàn viên ưu tú
+DVVL|dịch vụ việc làm
+EU|liên minh châu âu
+EVN|công ty viễn thông điện lực
+FIFA|liên đoàn bóng đá thế giới
+GATT|hiệp định chung về thuế quan và thương mại
+GCMND|giấy chứng minh nhân dân
+GCN|giấy chứng nhận
+GCNĐKKD|giấy chứng nhận đăng ký kinh doanh
+GCNKQT|giấy chứng nhận kết quả thi
+GCNQSD|giấy chứng nhận quyền sử dụng
+GCNQSDĐ|giấy chứng nhận quyền sử dụng đất
+GCNQSDĐƠ|giấy chứng nhận quyền sử dụng đất ở
+GCNQSH|giấy chứng nhận quyền sở hữu
+GCNQSHN|giấy chứng nhận quyền sở hữu nhà
+GCNQSHNƠ|giấy chứng nhận quyền sở hữu nhà ở
+GCNSK|giấy chứng nhận sức khỏe
+GCQ|giấy chủ quyền
+GD|giáo dục
+GĐ|giám đốc
+GDĐH|giáo dục dục đại học
+GĐĐH|giám đốc điều hành
+GDĐT|giáo dục và đào tạo
+GDGT|giáo dục giới tính
+GDNN|giáo dục nghề nghiệp
+GĐT|gạch đồng tâm
+GĐTLA|gạch đồng tâm long an
+GĐTT|giám đốc thông tin
+GDTX|giáo dục thường xuyên
+GHPGVN|giáo hội phật giáo việt nam
+GK|giáo khoa
+GKQT|chứng nhận kết quả thi
+GL|gia lai
+GMD|gái mại dâm
+GP|giấy phép
+GPC|công ty dịch vụ viễn thông
+GPLHĐB|giấy phép lưu hành đặc biệt
+GPLX|giấy phép lái xe
+GPNK|phép nhập khẩu
+GPTM|giải phẫu thẩm mỹ
+GPXD|giấy phép xây dựng
+GS|giáo sư
+GSTS|giáo sư tiến sỹ
+GSTSKH|giáo sư tiến sỹ khoa học
+GSTT|giám sát trọng tài
+GT|giao thông , giá trị
+GTCC|giao thông công chánh
+GTGT|giá trị gia tăng
+GTMT|giãn tĩnh mạch tinh
+GTVT|giao thông vận tải
+GV|giáo viên, giảng viên
+GVCN|giáo viên chủ nhiệm
+GVG|giáo viên giỏi
+GVMN|giáo viên mầm non, giáo viên miền núi
+GVTH|giáo viên tiểu học
+GVTN|giáo viên tình nguyện
+HAGL|hoàng anh gia lai
+HB|học bổng
+HBV|virus viêm gan b
+HC|hành chính, huy chương
+HCB|huy chương bạc
+HCĐ|huy chương đồng
+HCM|hồ chí minh
+HCTC|học chế tín chỉ
+HCTL|hội chợ triển lăm
+HCV|huy chương vàng
+HCVL|hội chợ việc làm
+HD|hướng dẫn
+HĐ|hội đồng, hợp đồng
+HĐBA|hội đồng bảo an liên hiệp quốc
+HĐCD|hội đồng chức danh
+HĐCDGS|hội đồng chức danh giáo sư
+HĐCDGSCS|hội đồng chức danh giáo sư cơ sở
+HĐCDGSN|hội đồng chức danh giáo sư ngành
+HĐCDGSNN|hội đồng chức danh giáo sư nhà nước
+HĐCT|hội đồng coi thi
+HĐĐB|hội đồng đền bù
+HĐĐG|hội đồng định giá
+HĐH|hệ điều hành
+HĐKT|hợp đồng kinh tế
+HĐLĐ|hợp đồng lao động
+HĐND|hội đồng nhân dân
+HĐNDTP|hội đồng nhân dân thành phố
+HĐNT|hội đồng nghệ thuật
+HĐQT|hội đồng quản trị
+HĐT|hội đồng trường , hội đồng thi
+HĐTĐ|hội đồng thẩm định
+HĐTS|hội đồng tuyển sinh
+HĐTT|hội đồng trọng tài
+HDV|hướng dẫn viên
+HĐXX|hội đồng xét xử
+HH|hoa hậu
+HHTG|hoa hậu thế giới
+HHVN|hoa hậu việt nam
+HK|học kỳ
+HKDD|hàng không dân dụng
+HKDDVN|hàng không dân dụng việt nam
+HKHKT|hội khoa học kỹ thuật
+HKHKTVN|hội khoa học kỹ thuật việt nam
+HKTT|hộ khẩu thường trú
+HL|huấn luyện
+HLBĐ|hoa lâm bình định
+HLQG|huấn luyện quốc gia
+HLTTQG|trung tâm huấn luyện thể thao quốc gia
+HLV|huấn luyện viên
+HMNĐ|hiến máu nhân đạo
+HN|hà nội, hội nghị
+HND|hội nông dân
+HNGĐ|hôn nhân gia đình
+HNHT|hội nghị hiệp thương
+HNV|hội nhà văn
+HP|hải phòng, học phần
+HPHN|hòa phát hà nội
+HQ|hải quan, hàn quốc
+HQĐT|hải quan điện tử
+HQHP|hải quan hải phòng
+HS|học sinh
+HSBC|học sinh bán công
+HSĐKDT|hồ sơ đăng ký dự thi
+HSDPA|truy nhập gói đường xuống tốc độ cao
+HSG|học sinh giỏi
+HSGQG|học sinh giỏi quốc gia
+HSGQT|học sinh giỏi quốc tế
+HSPT|học sinh phổ thông
+HSSV|học sinh sinh viên
+HSV|hội sinh viên
+HTCĐ|học tập cộng đồng
+HTXDVNN|hợp tác xã dịch vụ nông nghiệp
+HUD|tổng công ty đầu tư phát triển nhà và đô thị
+HV|học viên
+HVANND|học viện an ninh nhân dân
+HVBCVT|học viện bưu chính viễn thông
+HVCH|học viên cao học
+HVCNBCVT|học viện công nghệ bưu chính viễn thông
+HVKHQS|học viện khoa học quân sự
+HVN|honda việt nam
+HVNCL|hàng việt nam chất lượng
+HVNCLC|hàng việt nam chất lượng cao
+HVNH|học viện ngân hàng
+IMF|quỹ tiền tệ quốc tế
+KBNN|kho bạc nhà nước
+KBS|kênh truyền hình tw hàn quốc
+KCB|khám chữa bệnh
+KCN|khu công nghiệp
+KCX|khu chế xuất
+KDC|khu dân cư
+KĐCL|kiểm định chất lượng
+KĐCLGD|kiểm định chất lượng giáo dục
+KDCN|kiểu dáng công nghiệp
+KDDV|kinh doanh dịch vụ
+KDĐV|kiểm dịch động vật
+KDHĐC|kinh doanh hàng đa cấp
+KDL|khu du lịch
+KDN|kinh doanh nhà
+KDNPN|kinh doanh nhà phú nhuận
+KĐS|khu đường sông
+KĐT|khu đô thị
+KĐTM|khu đô thị mới
+KĐTNTL|đô thị nam thăng long
+KH|kế hoạch
+KHCN|khoa học công nghệ
+KHĐT|kế hoạch đầu tư
+KHKD|kế hoạch kinh doanh
+KHKT|khoa học kỹ thuật
+KHKTHN|khoa học kỹ thuật hạt nhân
+KHKTHS|khoa học kỹ thuật hình sự
+KHKTNN|khoa học kỹ thuật nông nghiệp
+KHKTNNMN|khoa học kỹ thuật nông nghiệp miền nam
+KHLS|khoa học lịch sử
+KHTN|khoa học tự nhiên
+KHXH|khoa học xãn hội
+KK|khuyến khích
+KKT|khu kinh tế
+KL|kết luận
+KLĐT|kết luận điều tra
+KLQG|kỷ lục quốc gia
+KN|khuyến nông
+KNTC|khiếu nại tố cáo
+KP|khu phố
+KS|kỹ sư, khách sạn
+KSND|kiểm sát nhân dân
+KSNDTC|kiểm sát nhân dân tối cao
+KST|ký sinh trùng
+KSV|kiểm sát viên
+KTM|khu thương mại
+KTNN|kinh tế nhà nước
+KTQD|kinh tế quốc dân
+KTQDHN|kinh tế quốc dân hà nội
+KTS|kiến trúc sư
+KTTV|khí tượng thủy văn
+KTV|kỹ thuật viên
+KTX|ký túc xá
+KV|khu vực
+KV1|khu vực 1
+KV2|khu vực 2
+KV3|khu vực 3
+LB|liên bang
+LCT|luật cạnh tranh, luật công ty
+LĐ|lao động
+LĐBĐ|liên đoàn bóng đá
+LĐBĐVN|liên đoàn bóng đá việt nam
+LĐLĐ|liên đoàn lao động
+LDP|đảng dân chủ tự do
+LĐTB|lao động thương binh
+LĐTBXH|lao động thương binh xã hội
+LH|liên hiệp, liên hoan
+LHP|liên hoan phim
+LHPN|liên hiệp phụ nữ
+LHQ|liên hiệp quốc, lên hợp quốc
+LHS|lưu học sinh
+LHTN|liên hiệp thanh niên
+LHTNVN|hội liên hiệp thanh niên việt nam
+LL|lực lượng
+LLLĐ|lực lượng lao động
+LS|luật sư
+LSQ|lãnh sự quán
+LTQĐTD|lây truyền qua đường tình dục
+MB|ngân hàng tmcp quân đội
+MBH|mũ bảo hiểm
+MHX|mùa hè xanh
+MS|mã số
+MT|môi trường, mặt trận
+MTĐT|máy tính điện tử
+MTTQ|mặt trận tổ quốc
+MTTQVN|mặt trận tổ quốc việt nam
+MTXT|máy tính xách tay
+NC|nghiên cứu
+NCC|nhà cung cấp
+NCKH|nghiên cứu khoa học
+NCL|ngoài công lập
+NCS|nghiên cứu sinh
+NCTO|hội đồng các tổ chức dệt may quốc gia mỹ
+NCTT|nghiên cứu thị trường
+ND|nhân dân
+NĐ|nghị định
+NDC|trung tâm dữ liệu viễn thám quốc gia
+NDT|nhân dân tệ
+NĐT|nhà đầu tư
+NĐVN|người đẹp việt nam
+NH|ngân hàng
+NHCSXH|ngân hàng chính sách xã hội
+NHCTCN|ngân hàng công thương chi nhánh
+NHCTHP|ngân hàng công thương hải phòng
+NHCTVN|ngân hàng công thương việt nam
+NHĐA|ngân hàng đông á
+NHĐÁ|ngân hàng đông á
+NHĐT|ngân hàng đầu tư
+NHĐTPT|ngân hàng đầu tư phát triển
+NHK|đài truyền hình quốc gia nhật bản
+NHNN|ngân hàng nhà nước
+NHNNo|ngân hàng nông nghiệp và phát triển nông thôn
+NHNNPTNT|ngân hàng nông nghiệp và phát triển nông thôn
+NHNNVN|ngân hàng nhà nước việt nam
+NHNoVN|ngân hàng nông nghiệp và phát triển nông thôn việt nam
+NHNT|ngân hàng ngoại thương
+NHRC|ủy ban nhân quyền quốc gia
+NHTM|ngân hàng thương mại
+NHTMCP|ngân hàng thương mại cổ phần
+NHTMNN|ngân hàng thương mại nhà nước
+NHTMQD|ngân hàng thương mại quốc doanh
+NHTQ|ngân hàng trung ương trung quốc
+NHTSA|cục an toàn xa lộ quốc gia mỹ
+NHTƯ|ngân hàng trung ương
+NHTW|ngân hàng trung ương
+NK|nhập khẩu
+NKBV|nhiễm khuẩn bệnh viện
+NKKN|nam kỳ khởi nghĩa
+NKNV|năng khiếu nghiệp vụ
+NKT|người khuyết tật
+NL|năng lượng
+NLĐ|người lao động
+NLMT|năng lượng mặt trời
+NLS|nông lâm sản
+NLTT|năng lượng tái tạo
+NMĐ|nhà máy điện
+NN|nhà nước
+NNCĐDC|nạn nhân chất độc da cam
+NNPTNT|nông nghiệp và phát triển nông thôn
+NPP|nhà phân phối
+NQ|nghị quyết
+NQD|ngoài quốc doanh
+NS|nghệ sỹ
+NSND|nghệ sỹ nhân dân
+NSNN|ngân sách nhà nước
+NST|nhiễm sắc thể
+NSƯT|nghệ sỹ ưu tú
+NTBD|nghệ thuật biểu diễn
+NTD|nhà tuyển dụng, người tiêu dùng
+NTK|nhà thiết kế
+NV|nhân viên, nguyện vọng
+NV1|nguyện vọng 1
+NV2|nguyện vọng 2
+NV3|nguyện vọng 3
+NVH|nhà văn hóa
+NVHTN|nhà văn hóa thanh niên
+NXB|nhà xuất bản
+NXBGD|nhà xuất bản giáo dục
+NXBKHXH|nhà xuất bản khoa học xã hội
+NXBQĐND|nhà xuất bản quân đội nhân dân
+NXBTN|nhà xuất bản tự nhiên
+NXBVHTT|nhà xuất bản văn hóa nghệ thuật
+PC14|phòng cảnh sát điều tra tội phạm về trật tự xã hội
+PC15|phòng cảnh sát điều tra tội phạm về quản lý kinh tế và chức vụ
+PC16|phòng cảnh sát điều tra
+PC17|phòng cảnh sát phòng chống tội phạm ma tuý
+PCBL|phòng chống bão lụt
+PCBLTKCN|phòng chống bão lụt và tìm kiếm cứu nạn
+PCBTH|phổ cập bậc trung học
+PCC|phòng công chứng
+PCCC|phòng cháy chửa cháy
+PCGD|phổ cập giáo dục
+PCGDBTH|phổ cập giáo dục bậc trung học
+PCGDTH|phổ cập giáo dục tiểu học
+PCGDTHCS|phổ cập giáo dục trung học cơ sở
+PCLBMN|phòng chống lụt bão miền nam
+PCLBTƯ|phòng chống lụt bão trung ương
+PCLBTW|phòng chống lụt bão trung ương
+PCT|phó chủ tịch,
+PCTH|phổ cập tiểu học
+PCTHCS|phổ cập trung học cơ sở
+PCTN|phòng chống tệ nạn
+PCTNXH|phòng chống tệ nạn xã hội
+PCTPCNC|phòng chống tội phạm công nghệ cao
+PGĐ|phó giám đốc
+PGHH|phật giáo hòa hảo
+PGS|phó giáo sư
+PHHS|phụ huynh học sinh
+PL|pháp luật
+PLO|tổ chức giải phóng palestin
+PM|phần mềm
+PMU|ban quản lý dự án
+PMU18|ban quản lý dự án 18
+PN|phụ nữ
+PNTR|quy chế thương mại bình thường vĩnh viễn
+PP|phương pháp
+PS|phóng sự
+PTCS|phổ thông cơ sở
+PTN|phòng thí nghiệm
+PTNT|phát triển nông thôn
+PTSC|công ty dịch vụ kỹ thuật dầu khí
+PTT|phó thủ tướng
+PTTH|phổ thông trung học
+PTTM|phẫu thuật thẩm mỹ
+PTTT|phát triển trẻ thơ
+PTV|phát thanh viên
+PV|phóng viên, phỏng vấn
+PY|phú yên
+QBLTD|quĩ bảo lãnh tín dụng
+QC|quy chế
+QCDCCS|quy chế dân chủ cơ sở
+QCGNHH|quy chế ghi nhãn hàng hóa
+QCHQ|quan chức hải quan
+QCKDTXD|quy chế kinh doanh thép xây dựng
+QCKT|quy chuẩn kĩ thuật
+QĐ|quyết định
+QĐND|quân đội nhân dân
+QG|quốc gia
+QH|quốc hội
+QHTD|quan hệ tình dục
+QK|quân khu
+QL|quản lý
+QLD|quản lý dược
+QLDA|quản lý dự án
+QLĐT|quản lý đào tạo
+QLTT|quản lý thị trường
+QN|quảng ninh
+QSD|quyền sử dụng
+QSDĐ|quyền sử dụng đất
+QTKD|quản trị kinh doanh
+RLC|rối loạn cương
+RLCD|rối loạn cương dương
+SARS|sars, hội chứng hô hấp cấp tính nặng
+SBD|số báo danh
+SBS|công ty chứng khoán ngân hàng sài gòn thương tín
+SD|sử dụng
+SDĐ|sử dụng đất
+SDĐNN|sử dụng đất nông nghiệp
+SĐH|sau đại học
+SĐK|số đăng ký
+SĐNĐ|sông đà nam định
+SĐT|số điện thoại
+SĐTLA|sơn đồng tâm long an
+SG|sài gòn
+SGD|sở giáo dục
+SGGP|sài gòn giải phóng
+SGK|sách giáo khoa
+SGT|saigontourist
+SGTT|sài gòn tiếp thị
+SGTVT|sở giao thông vận tải
+SH|sinh hoạt
+SHNN|sở hữu nhà nước
+SHTD|sinh hoạt tình dục
+SHTT|sở hữu trí tuệ
+SJC|công ty vàng bạc đá quý tp hồ chí minh
+SK|sân khấu
+SKHCN|sở khoa học công nghệ
+SKHCNMT|sở khoa học công nghệ và môi trường
+SKHĐT|sở kế hoạch và đầu tư
+SKSS|sức khỏe sinh sản
+SLNA|sông lam nghệ an
+SMĐH|sao mai điểm hẹn
+SN|sinh năm, sinh ngày
+SNN|sở nông nghiệp
+SP|sư phạm, sản phẩm
+SPKT|sư phạm kỹ thuật
+SS|sĩ số
+SSA|hiệp hội tôm miền nam nước mỹ
+STB|ngân hàng thương mại cổ phần sài gòn thương tín
+SV|sinh viên
+SVĐ|sân vận động
+SVĐV|sao vàng đất việt
+SVHS|sinh viên học sinh
+SV–HS|sinh viên học sinh
+SVNCKH|sinh viên nghiên cứu khoa học
+SVTN|sinh viên tình nguyện
+SVVN|sinh viên việt nam
+SX|sản xuất
+SXH|sốt xuất huyết
+SYLL|sơ yếu lý lịch
+TACN|thức ăn chăn nuôi
+TAND|tòa án nhân dân
+TANDTC|tòa án nhân dân tối cao
+TBD|thái bình dương
+TBKTSG|thời báo kinh tế sài gòn
+TBKTVN|thời báo kinh tế việt nam
+TBMMN|tai biến mạch máu não
+TBT|tổng biên tập
+TBTT|thuê bao trả trước
+TBXH|thương binh xã hội
+TC|tài chính, tổng cộng
+TCBVNTD|tiêu chuẩn và bảo vệ người tiêu dùng
+TCCN|trung cấp chuyên nghiệp
+TCCS|tổ chức cơ sở, tạp chí cộng sản
+TCDL|tổng cục du lịch
+TCHL|tuyệt chủng hàng loạt
+TCHQ|tổng cục hải quan
+TCKH|tài chính - kế hoạch, tạp chí khoa học, trái cây không hạt
+TCKT|tài chính - kế toán
+TCMN|thủ công mỹ nghệ
+TCMR|tiêm chủng mở rộng
+TCN|trung cấp nghề
+TCNN|tài chính nhà nước
+TCS|trịnh công sơn
+TCT|tổng công ty
+TCTD|tổ chức tín dụng
+TCTT|trò chơi trực tuyến
+TCTTMSG|tổng công ty thương mại sài gòn
+TCVN|tiêu chuẩn việt nam
+TCVSG|thảo cầm viên sài gòn
+TD|tình dục
+TĐ|từ điển
+TĐBKVN|từ điển bách khoa việt nam
+TĐC|tái định cư
+TDTT|thể dục thể thao
+TDTTQG|thể dục thể thao quốc gia
+TDV|trình dược viên
+TFS|hãng phim truyền hình tphcm
+TG|thế giới
+TGĐ|tổng giám đốc
+TGPL|trợ giúp pháp lý
+TH|truyền hình, trung học
+THCB|trung học chuyên ban
+THCN|trung học chuyên nghiệp
+THCS|trung học cơ sở
+THCSND|thực hiện chính sách nhà đất
+THCSNĐ|thực hiện chính sách nhà đất
+THDL|trung học dân lập
+THGT|tín hiệu giao thông
+THKTS|truyền hình kỹ thuật số
+THKTSMĐ|truyền hình kỹ thuật số mặt đất
+THPT|trung học phổ thông
+THQG|thương hiệu quốc gia
+THS|tín hiệu số
+THTT|truyền hình trực tiếp
+THVN|truyền hình việt nam
+THX|tân hoa xã
+TK|thiết kế
+TKCN|tìm kiếm cứu nạn
+TM|thương mại
+TMCP|thương mại cổ phần
+TMĐT|thương mại điện tử
+TMN|thép miền nam
+TMV|công ty ôtô toyota việt nam
+TN|thanh niên
+TNCN|thu nhập cá nhân
+TNCS|thanh niên cộng sản
+TNĐH|tốt nghiệp đại học
+TNDN|thu nhập doanh nghiệp
+TNĐT|thoát nước đô thị
+TNGT|tai nạn giao thông
+TNHC|trinh nữ hoàng cung
+TNHH|trách nhiệm hữu hạn
+TNK|thuế nhập khẩu
+TNKQ|trắc nghiệm khách quan
+TNLN|thanh niên lập nghiệp
+TNMT|tài nguyên môi trường
+TNND|tiếng nói nhân dân
+TNNT|thanh niên nông thôn
+TNO|thanh niên online
+TNS|tu nghiệp sinh
+TNSV|thanh niên sinh viên
+TNSVVN|thanh niên sinh viên việt nam
+TNT|tình nguyện trẻ
+TNTN|thanh niên tình nguyện, tài nguyên thiên nhiên
+TNTP|thiếu niên tiền phong
+TNV|tình nguyện viên
+TNVN|thanh niên việt nam
+TNXH|tệ nạn xã hội
+TNXK|thanh niên xung kích
+TNXP|thanh niên xung phong
+TPCĐ|trái phiếu chuyển đổi
+TPCN|thực phẩm chức năng
+TPCT|thành phố cần thơ
+TPHCM|thành phố hồ chí minh
+TPO|tiên phong online
+TQ|trung quốc
+TSDĐ|tiền sử dụng đất
+TSKH|tiến sỹ khoa học
+TSN|tân sơn nhất
+TT|trung tâm, thị trường
+TTBĐS|thị trường bất động sản
+TTBDVH|trung tâm bồi dưỡng văn hóa
+TTBDVHNG|trung tâm bồi dưỡng văn hóa ngoài giờ
+TTBVQTG|trung tâm bảo vệ quyền tác giả
+TTBYT|trang thiết bị y tế
+TTCK|trung tâm chứng khoán, thị trường chứng khoán
+TTCN|tuổi trẻ chủ nhật, trung tâm cai nghiện, tiểu thủ công nghiệp
+TTCP|thanh tra chính phủ , thủ tướng chính phủ
+TTCT|thể thao cuối tuần
+TTĐB|thuế tiêu thụ đặc biệt
+TTDD|trung tâm dinh dưỡng
+TTĐM|trung tâm điện máy
+TTDV|trung tâm dịch vụ
+TTDVVL|trung tâm dịch vụ việc làm
+TTg|thủ tướng
+TTGDCK|trung tâm giao dich chứng khoán
+TTGDTX|trung tâm giáo dục thường xuyên
+TTGT|trật tự giao thông
+TTH|thừa thiên huế
+TTHTCĐ|trung tâm học tập cộng đồng
+TTHTSV|trung tâm hỗ trợ sinh viên
+TTK|tổng thư ký
+TTLT|thông tư liên tịch
+TTN|thanh thiếu niên
+TTNN|trung tâm ngoại ngữ
+TTO|tuổi trẻ online
+TTQLKT|trật tự quản lý kinh tế
+TTTH|trung tâm tin học
+TTTM|trung tâm thương mại
+TTTON|thụ tinh trong ống nghiệm
+TTTTN|trí thức trẻ tình nguyện
+TTVGT|trật tự viên giao thông
+TTVH|trung tâm văn hóa
+TTVN|trí tuệ việt nam, trái tim việt nam, thể thao việt nam
+TTXH|trật tự xã hội
+TTXVN|thông tấn xã việt nam
+TTYT|trung tâm y tế
+TTYTDP|trung tâm y tế dự phòng
+TV|thư viện
+TVHK|tiếp viên hàng không
+TVN|than việt nam
+TVQH|thường vụ quốc hội
+TVV|tư vấn viên
+TW|trung ương
+TX|thị xã
+UBCKNN|ủy ban chứng khoán nhà nước
+UBKT|uỷ ban kiểm tra
+UBMTTQ|ủy ban mạt trận tổ quốc
+UBMTTQVN|ủy ban mặt trận tổ quốc việt nam
+UBND|ủy ban nhân dân
+UBNDTP|ủy ban nhân dan thành phố
+UBTDTT|ủy ban thể dục thể thao
+UBTVQH|ủy ban thường vụ quốc hội
+ƯCV|ứng cử viên
+UNDP|chương trình phát triển liên hợp quốc
+UNESCO|tổ chức giáo dục, khoa học và văn hóa của liên hiệp quốc
+UNFPA|quỹ dân số liên hợp quốc
+UNHCR|văn phòng cao ủy liên hợp quốc về người tỵ nạn
+UNICEF|quỹ nhi đồng liên hợp quốc
+UNIFIL|lực lượng gìn giữ hòa bình của lhq tại miền nam libăng
+UT|ung thư
+UV|ủy viên
+UVBCH|ủy viên ban chấp hành
+UVBCT|ủy viên bộ chính trị
+VCB|ngân hàng ngoại thương việt nam
+VCK|vòng chung kết
+VD|ví dụ
+VĐ|vô địch
+VDC|công ty điện toán và truyền số liệu
+VĐQG|vô địch quốc gia
+VĐV|vận động viên
+VĐVQG|vận động viên quốc gia
+VFF|liên đoàn bóng đá việt nam
+VH|văn hóa
+VHGDTNTN|văn hóa giáo dục thanh niên thiếu niên
+VHGDTTNNĐ|văn hóa giáo dục thanh thiếu niên và nhi đồng
+VHNT|văn học nghệ thuật
+VHTT|văn hóa thông tin
+VKS|viện kiểm sát
+VKSND|viện kiểm sát nhân dân
+VKSNDTC|viện kiểm sát nhân dân tối cao
+VL|vật lý
+VLTK|võ lâm truyền kỳ
+VLXD|vật liệu xây dựng
+VN|việt nam
+VNCC|tổng công ty xi măng việt nam
+VNM|vinamilk
+VP|văn phòng
+VPCP|văn phòng chính phủ
+VPĐD|văn phòng đại diện
+VQG|vườn quốc gia
+VS|vệ sinh
+VSP|xí nghiệp liên doanh vietsovpetro
+VT|viên thông, vi tính, vũ trụ
+VTV|đài truyền hình việt nam
+VYSA|hội thanh niên sinh viên việt nam tại nhật bản
+WB|ngân hàng thế giới
+WTO|tổ chức thương mại thế giới
+XD|xây dựng
+XDCB|xây dựng cơ bản
+XĐGN|xoá đói giảm nghèo
+XDHK|xăng dầu hàng không
+XH|xã hội
+XHCN|xã hội chủ nghĩa
+XHH|xã hội hóa
+XK|xuất khẩu
+XKLĐ|xuất khẩu lao động
+XN|xí nghiệp
+XNK|xuất nhập khẩu
+XSKT|xổ số kiến thiết
+XTTM|xúc tiến thương mại
+XX|xét xử
+YKVN|y khoa việt nam
+YTDP|y tế dự phòng
+YTế|y tế
+SEA|xi

@@ -1,0 +1,11 @@
+VNĐ|việt nam đồng
+VND|việt nam đồng
+USD|đô la mĩ
+USĐ|đô la mĩ
+$|đô la
+S$|đô la sinh
+đ|đồng
+€|ơ rô
+£|bảng anh
+¥|yên
+Fr|phờ ranh

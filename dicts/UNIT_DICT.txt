@@ -1,0 +1,14 @@
+m|mét
+mm|mi li mét
+cm|xen ti mét
+dm|đề xi mét
+g|gam
+kg|ki lô gam
+mg|mi li gam
+h|giờ
+ph|phút
+s|giây
+g|giờ
+km|ki lô mét
+hz|héc
+pound|pao
