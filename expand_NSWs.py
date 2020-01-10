@@ -292,9 +292,9 @@ def LWRD2words(lwrd_string):
     lwrd_string = lwrd_string.lower()
     if lwrd_string in EN2VI_DICT.keys():
         result = EN2VI_DICT[lwrd_string]
-    elif lwrd_string in EN2VI_DICT.keys():
+    elif lwrd_string in PERSON_DICT.keys():
         result = PERSON_DICT[lwrd_string]
-    elif lwrd_string in EN2VI_DICT.keys():
+    elif lwrd_string in BRANCH_DICT.keys():
         result = BRANCH_DICT[lwrd_string]
     else:
         if '-' in lwrd_string:
@@ -321,16 +321,14 @@ def LSEQ2words(lseq_string):
 def LABB2words(labb_string):
     """ĐHBKHN"""
     result = ""
-    labb_string = labb_string.upper()
-    try:
-        if labb_string in (ABB_DICT.keys()):
-            result = ABB_DICT[labb_string].split(',')[0]
-        elif labb_string in (UNIT_DICT.key()):
-            result = UNIT_DICT[labb_string].split(',')[0]
-        else:
-            result = CURRENCY_DICT[labb_string].split(',')[0]
-    except:
-        result = CSEQ2words(labb_string)
+    if labb_string.upper() in (ABB_DICT.keys()):
+        result = ABB_DICT[labb_string.upper()].split(',')[0]
+    elif labb_string.lower() in (UNIT_DICT.keys()):
+        result = UNIT_DICT[labb_string.lower()].split(',')[0]
+    elif labb_string.upper() in (CURRENCY_DICT.keys()):
+        result = CURRENCY_DICT[labb_string].split(',')[0]
+    else:
+        result = LSEQ2words(labb_string)
     return result
 """LETTERS End"""
 

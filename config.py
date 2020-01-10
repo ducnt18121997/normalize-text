@@ -45,7 +45,6 @@ popular_en2word_dict = load_dict(EN2WORD_DICT_PATH)
 popular_branch_dict = load_dict(BRANCH_DICT_PATH)
 popular_person_dict = load_dict(PERSON_DICT_PATH)
 
-
 popular_en2vi_dict.update(popular_branch_dict)
 popular_en2vi_dict.update(popular_person_dict)
 popular_en2vi_dict.update(EN2VI_DICT)
