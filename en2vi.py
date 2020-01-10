@@ -30,25 +30,30 @@ def convert_by_rules(en_pronounce):
     #  tách
     temp = re.sub(r'(?P<id>{})'.format(phones1),
                   lambda x: x.group('id') + " ", temp)
-
+    #print(temp)
     temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones4, phones4),
                   lambda x: x.group('id') + " " + x.group('id1'), temp)
     temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones4, phones4),
                   lambda x: x.group('id') + " " + x.group('id1'), temp)
-
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones4, phones2, phones4),
+    #print(temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones1, phones2, phones4),
                   lambda x: x.group('id') + " " + x.group('id1') + x.group('id2'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones4, phones2, phones4),
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones1, phones2, phones4),
                   lambda x: x.group('id') + " " + x.group('id1') + x.group('id2'), temp)
-
+    #print(temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones3, phones2, phones4),
+                  lambda x: x.group('id') + x.group('id1') + " " + x.group('id1') + x.group('id2'), temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones3, phones2, phones4),
+                  lambda x: x.group('id') + x.group('id1') + " " + x.group('id1') + x.group('id2'), temp)           
+    #print(temp)
     temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones3, phones2, phones2),
                   lambda x: x.group('id') + x.group('id1') + " " + x.group('id2'), temp)
-
+    #print(temp)
     temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones2, phones2),
                   lambda x: x.group('id') + " " + x.group('id1'), temp)
     temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones2, phones2),
                   lambda x: x.group('id') + " " + x.group('id1'), temp)
-
+    #print(temp)
     # ghép âm
     temp = re.sub(r'(?P<id>a i|o i|i a|u ơ|i u|a o)', lambda x: x.group(
         'id')[0] + x.group('id')[2:] + ' ', temp)
@@ -169,10 +174,10 @@ def latin2words(token):
     phones2 = 'p|c|t|ch|n|ng|m|ph|b|d|đ|g|h|x|s|th|v|gu|l|r'
     phones3 = 'a|ă|e|i|o|ơ|ô|u|y'
     phones4 = 'ai|ao|ây|oi|âu|a|ă|e|i|o|ơ|ô|u'
-    token = re.sub('(?P<id>{})(?P<id1>({})({}))'.format(phones3, phones2, phones3),
-                   lambda x: x.group('id') + ' ' + x.group('id1'), token)
-    token = re.sub('(?P<id>{})(?P<id1>({})({}))'.format(phones3, phones2, phones3),
-                   lambda x: x.group('id') + ' ' + x.group('id1'), token)
+    #token = re.sub('(?P<id>{})(?P<id1>({})(?P<id2>({})'.format(phones3, phones2, phones4),
+    #               lambda x: x.group('id') + x.group('id1') + ' ' + x.group('id1') + x.group('id2'), token)
+    #token = re.sub('(?P<id>{})(?P<id1>({})(?P<id2>({})'.format(phones3, phones2, phones4),
+    #               lambda x: x.group('id') + x.group('id1') + ' ' + x.group('id1') + x.group('id2'), token)
     token = re.sub('yl', 'in', token)
     token = re.sub('(?P<id>da|di|de|du|do)',
                    lambda x: 'đ' + x.group('id')[1], token)
@@ -255,7 +260,12 @@ def en2vi(en_word):
                 if result != None:
                     en_arr[i] = result
                 else:
-                    en_arr[i] = latin2words(en_arr[i])
+                    try:
+                        en_arr[i] = latin2words(en_arr[i])
+                    except:
+                        for char in en_arr[i]:
+                            if char.upper() in (LSEQ_DICT.keys()):
+                                result += LSEQ_DICT[char.upper()] + ' '
             result = ' '.join(en_arr)
         else:    
             result = ""

@@ -286,9 +286,12 @@ def classify_text(list_token):
             elif re.match(r'[a-zA-Z]', token):
                 label.append('LETTERS')
                 if len(token) == 1:
-                    label.append('LSEQ')
+                    if (token in MONY)  or (token in UNIT):
+                        label.append('LABB')
+                    else:
+                        label.append('LSEQ')
                 else:
-                    if (token.upper() in LABB)  or (token.upper() in MONY)  or (token.lower() in UNIT):
+                    if (token.upper() in LABB) or (token.upper() in MONY)  or (token.lower() in UNIT):
                         label.append('LABB')
                     elif token == token.upper():
                         label.append('LSEQ')
