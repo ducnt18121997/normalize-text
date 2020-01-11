@@ -1,5 +1,5 @@
 AA|a
-AE|â
+AE|â,e
 AH|ă
 AO|o
 AW|ao
@@ -10,7 +10,7 @@ D|đ
 DH|d
 EH|e
 ER|ơ
-EY|ê
+EY|ây
 F|ph
 G|g
 HH|h
@@ -22,7 +22,7 @@ L|l
 M|m
 N|n
 NG|ng
-OW|ơ
+OW|âu
 OY|oi
 P|p
 R|r
@@ -36,4 +36,4 @@ V|v
 W|gu
 Y|d
 Z|d
-ZH|gi
+ZH|d

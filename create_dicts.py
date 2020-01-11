@@ -19,15 +19,14 @@ popular_en2vi_dict.update(popular_person_dict)
 list_enwords = pronouncing.cmudict.words()
 list_enwords.extend(popular_en2vi_dict.keys())
 
-
 """Tạo từ điển phiên âm tiếng Việt cho các từ tiếng Anh"""
 t0 = time.time()
-
 with open(EN2VI_DICT_PATH, 'w') as f:
     for enword in tqdm(list_enwords):
         viword = read_en2vi(enword)
-        if viword:
+        #viword = pronouncing.phones_for_word(enword)
+        if (viword != None) or (viword != ''):
             # khác None thì ghi vào file
             f.write("{}|{}\n".format(enword, viword))
-
+f.close()
 print("Time: {} s".format(time.time()-t0))

@@ -322,10 +322,6 @@ def classify_text(list_token):
         else:
             label = []
             label.append('NOT_NSWs')
-            if token.lower() in popular_en2vi_dict.keys():
-                label[0] = 'LETTERS'
-                label.append('LWRD')
-            else:
-                label.append('SKIP')
+            label.append('SKIP')
             list_label.append(label[0:2])
     return list_label

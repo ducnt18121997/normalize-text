@@ -10,9 +10,9 @@ def normalize_para(text):
     list_token = convert_text(text)
     list_label = classify_text(list_token)
     normalized_text, list_normalized_text = replace(list_token, list_label)
-    for i, token in enumerate(list_token):
-        if token[0].lower() not in list_vietnamese_words:
-            print(token[0] + '|' + list_label[i][1] + '|' + list_normalized_text[i])
+    for i in range(len(list_token)):
+        if list_label[i][0] != 'NOT_NSWs':
+            print(list_token[i][0] + '|' + list_label[i][1] + '|' + list_normalized_text[i])
     normalized_text = ' '.join(normalized_text.split())
     return normalized_text
 
@@ -33,6 +33,6 @@ def normalize(text):
     text = ' '.join(text.split())
     return text
 
-text = open('./vidu_2.txt').read()
+text = open('./vidu.txt').read()
 text = normalize(text)
 print(text)

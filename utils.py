@@ -12,8 +12,10 @@ def load_dict(dict_path):
         for row in rows:
             if row == '':
                 continue
-            key = row.split('|')[0].strip()
-            value = row.split('|')[1].strip()
-            dict_[key] = value
+            row = row.split('|')
+            if len(row) > 1:
+                key = row[0].strip()
+                value = row[1].strip()
+                dict_[key] = value
 
     return dict_ 
