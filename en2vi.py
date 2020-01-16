@@ -14,157 +14,55 @@ def convert_by_rules(en_pronounce):
     for i, en_phone in enumerate(list_en_phonemes):
         if i == 0:
             if en_phone in cmuphone2vi_dict.keys():
-                list_vi_phonemes.append(cmuphone2vi_dict[en_phone].split(',')[-1])
+                list_vi_phonemes.append(cmuphone2vi_dict[en_phone].split(',')[0])
+        elif i == len(list_en_phonemes) - 1:
+            if en_phone in cmuphone2vi_dict.keys():
+                list_vi_phonemes.append(cmuphone2vi_dict[en_phone].split(',')[2])
         else:
             if en_phone in cmuphone2vi_dict.keys():
-                list_vi_phonemes.append(cmuphone2vi_dict[en_phone].split(',')[0])
+                list_vi_phonemes.append(cmuphone2vi_dict[en_phone].split(',')[1])
     
     temp = ''.join(list_vi_phonemes)
 
-    phones1 = 'ai|ao|ây|oi|âu'
-    phones2 = 'p|c|t|ch|n|ng|m|ph|b|d|đ|g|h|x|s|th|v|gu|l|r'
-    phones3 = 'a|ă|e|i|o|ơ|ô|u'
-    phones4 = 'ai|ao|ây|oi|âu|a|ă|e|i|o|ơ|ô|u'
+    phones1 = 'au|ao|ai|ây|oi|âu'
+    phones2 = 'b|p|ch|đ|d|ph|g|h|gi|k|c|l|m|n|ng|p|r|x|s|t|th|gu'
+    phones3 = 'a|ơ|ă|o|e|ê|i|ô|u'
+    phones4 = 'au|ao|ai|ây|oi|âu|a|ơ|ă|o|e|ê|ơ|i|ô|u'
+
+    phones2_ = 'gi|gu'
+
+    #tách mộ số âm không đọc được
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones2_, phones1),
+                  lambda x: x.group('id') + ' ' + x.group('id1'), temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones2_, phones1),
+                  lambda x: x.group('id') + ' ' + x.group('id1'), temp)
+
+    #thêm ờ cho phụ âm đứng riêng
+    if temp in phones2.split('|'):
+        temp += 'ờ'
     
-    phones5 = 'p|c|t|n|m|b|d|đ|x|s|v|l|r'
-    phones6 = 'm|b|d|đ|h|x|s|v|g|l|r'
-    #  tách
-    temp = re.sub(r'(?P<id>{})'.format(phones1),
-                  lambda x: x.group('id') + " ", temp)
-
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones4, phones4),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones4, phones4),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-    
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones5, phones5),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones5, phones5),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-    
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones6, phones6),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones6, phones6),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones1, phones2, phones4),
-                  lambda x: x.group('id') + " " + x.group('id1') + x.group('id2'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones1, phones2, phones4),
-                  lambda x: x.group('id') + " " + x.group('id1') + x.group('id2'), temp)
-
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones3, phones2, phones4),
-                  lambda x: x.group('id') + x.group('id1') + " " + x.group('id1') + x.group('id2'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones3, phones2, phones4),
-                  lambda x: x.group('id') + x.group('id1') + " " + x.group('id1') + x.group('id2'), temp)           
-
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})(?P<id2>{})'.format(phones3, phones2, phones2),
-                  lambda x: x.group('id') + x.group('id1') + " " + x.group('id2'), temp)
-
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones2, phones2),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones2, phones2),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-
-    # ghép âm
-    temp = re.sub(r'(?P<id>a i|o i|i a|u ơ|i u|a o)', lambda x: x.group(
-        'id')[0] + x.group('id')[2:] + ' ', temp)
-    temp = re.sub(r'(?P<id>n g|c h|p h|t h|t r)',
-                  lambda x: x.group('id')[:1] + x.group('id')[2:], temp)
-
-    # tach phần lỗi khi ghép
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones1, phones4),
-                  lambda x: x.group('id') + " " + x.group('id1'), temp)
-
-    # thay đổi âm cuối của từ
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(
-        phones4, 'đ|x|s|th'), lambda x: x.group('id')+'t', temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(
-        phones4, 'ph|b|v'), lambda x: x.group('id')+'p', temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(
-        phones4, 'd|h'), lambda x: x.group('id'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(
-        phones4, 'g|c|ch'), lambda x: x.group('id')+'c', temp)
-    
-    # chỉnh sửa phát âm
-    temp = re.sub(r'ơ (?P<id>{})'.format(phones4),
-                  lambda x: 'ơ r' + x.group('id'), temp)
-    temp = re.sub(r'ơl'.format(phones2), lambda x: 'ồ', temp)
-
-    temp = re.sub(r'gu (?P<id>{})'.format(phones4),
-                  lambda x: 'gu' + x.group('id'), temp)
-
-    temp = re.sub(r'^ơn ', lambda x: 'ăn ', temp)
-    temp = re.sub(r'(?P<id>{})ơn'.format(phones2),
-                  lambda x: x.group('id')+'ừn', temp)
-    temp = re.sub(r'âu l |âu n ', lambda x: 'ôn ', temp)
-
-    temp = re.sub(r'gu i l', lambda x: 'guiu l', temp)
-    temp = re.sub(r'gu il', lambda x: 'guiu', temp)
-    temp = re.sub(r'gu i', lambda x: 'gui', temp)
-    temp = re.sub(r'gui', lambda x: 'guy', temp)
-    temp = re.sub(r'guyl', lambda x: 'guiu', temp)
-    temp = re.sub(r'guu ', lambda x: 'gu ', temp)
-    temp = re.sub(r'guơ (?P<id>{}) '.format('m|n'),
-                  lambda x: 'guơ'+x.group('id')+' ', temp)
-
-    temp = re.sub(r'tai  m |tai  m$', lambda x: 'tham ', temp)
-
-    temp = re.sub(r'ây (?P<id>{}) '.format('t|m|n'),
-                  lambda x: 'ê'+x.group('id') + " ", temp)
-    temp = re.sub(r'ây (?P<id>{})$'.format('t|m|n'),
-                  lambda x: 'ê'+x.group('id'), temp)
-    temp = re.sub(r'ây (?P<id>{})(?P<id1>{})'.format('t|m|n', phones4),
-                  lambda x: 'ê'+x.group('id') + " "+x.group('id')+x.group('id1'), temp)
-    temp = re.sub(r'c(?P<id>{})'.format('i|ê'),
-                  lambda x: 'k'+x.group('id'), temp)
-    temp = re.sub(r'êt', lambda x: 'ết', temp)
-
-    temp = re.sub(r'p rơ', lambda x: 'p rô', temp)
-    temp = re.sub(r'ao  n', lambda x: 'ao', temp)
-    temp = re.sub(r'đơc', lambda x: 'đắc', temp)
-    temp = re.sub(r'^ơ n', lambda x: 'ăn ', temp)
-    temp = re.sub(r'gu ut|guut', lambda x: 'gút', temp)
-    temp = re.sub(r'gu ul|guul', lambda x: 'gun', temp)
-    temp = re.sub(r' c gu|^c gu', lambda x: ' qu', temp)
-    temp = re.sub(r'ây ng', lambda x: 'ên', temp)
-
-    # âm i ơ thành âm iu
-    temp = re.sub(r'(?P<id>{})i ơ '.format(phones2),
-                  lambda x: x.group('id') + 'iu ', temp)
-
-    temp = re.sub(r'(?P<id>{})r t '.format(phones3),
-                  lambda x: x.group('id')+'t', temp)
-    temp = re.sub(r'(?P<id>{})r t$'.format(phones3),
-                  lambda x: x.group('id')+'t', temp)
-    temp = re.sub(r'(?P<id>{})r'.format(phones3),
+    #loại bỏ 1 số âm cuối không đọc được
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones1, phones2),
+                  lambda x: x.group('id'), temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones1, phones2),
+                  lambda x: x.group('id'), temp)
+                  
+    #chỉnh sửa 1 số âm cuối 
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones1, 'l'),
+                  lambda x: x.group('id'), temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones1, 'l'),
                   lambda x: x.group('id'), temp)
 
-    temp = re.sub(r'(?P<id>{})l'.format('i'),
-                  lambda x: x.group('id')+'u', temp)
-    temp = re.sub(r'(?P<id>{})l'.format('e'),
-                  lambda x: x.group('id')+'o', temp)
-    temp = re.sub(r'(?P<id>{})l'.format('u|a|o'),
-                  lambda x: x.group('id')+'n', temp)
-
-    temp = re.sub(r'(?P<id>{})c l'.format(phones3),
-                  lambda x: x.group('id')+'c cồ l', temp)
-    temp = re.sub(r'(?P<id>{})p l'.format(phones3),
-                  lambda x: x.group('id')+' pồ l', temp)
-
-    temp = re.sub(r'^no n'.format(phones3), lambda x: 'non ', temp)
-
-    # loại bỏ một số âm cuối
-    temp = re.sub(r' (?P<id>{})$'.format(phones2), lambda x: '', temp)
-    temp = re.sub(r' (?P<id>{})$'.format(phones2), lambda x: '', temp)
-
-    # thêm ờ cho phụ âm đứng riêng
-    temp = re.sub(r'^(?P<id>{}) '.format(phones2),
-                  lambda x: x.group('id')+'ờ ', temp)
-    temp = re.sub(r' (?P<id>{}) '.format(phones2),
-                  lambda x: ' ' + x.group('id')+'ờ ', temp)
-    temp = re.sub(r' (?P<id>{}) '.format(phones2),
-                  lambda x: ' ' + x.group('id')+'ờ ', temp)
-
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('e', 'l'),
+                  lambda x: x.group('id') + 'o', temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('e', 'l'),
+                  lambda x: x.group('id') + 'o', temp)
+    
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones3, 'l'),
+                  lambda x: x.group('id'), temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones3, 'l'),
+                  lambda x: x.group('id'), temp)
+    
     # thêm dấu
     add_prosodic_dict = {
         'at':'át', 'ăt':'ắt', 'ât':'ất', 'et':'ét', 'êt':'ết', 'it':'ít', 'ot':'ót', 'ôt':'ốt', 'ơt':'ớt', 'ut':'út', 'ưt':'ứt', 'yt':'ýt',
@@ -178,36 +76,87 @@ def convert_by_rules(en_pronounce):
 def convert_enword(en_pronounce):
     list_en_phonemes = en_pronounce.split()
     for i, en_phone in enumerate(list_en_phonemes):
-        # remove the digit
+        # loại bỏ trọng âm
         if en_phone[-1].isdigit():
             list_en_phonemes[i] = en_phone[:-1]
     
-    list_cmu_phonemes = []
     #Tách nguyên âm, phụ âm
-    cmu_vowel = 'AA|AE|AH|AO|AW|AY|CH|EH|ER|IH|IY|OW|OY|EY'
-    cmu_consonant = 'B|CH|D|DH|F|G|HH|JH|K|L|M|N|NG|P|R|S|SH|T|TH|UH|UW|V|W|Y|Z|ZH' 
+    cmu_vowel = 'AA|AE|AH|AO|AW|AY|EH|ER|IH|IY|Y|OW|OY|EY|UH|UW'
+    cmu_vowel = cmu_vowel.split('|')
+    cmu_consonant = 'B|CH|D|DH|F|G|HH|JH|K|L|M|N|NG|P|R|S|SH|T|TH|V|W|Z|ZH'
+    cmu_consonant = cmu_consonant.split('|')
+    cmu_con_ = 'B|CH|D|DH|G|HH|JH|K|L|P|R|S|SH|T|V|W|Z|ZH'
+    cmu_con__ = 'F|M|N|TH|NG' 
 
-    for i in range(len(list_en_phonemes)):
-        if (i == 0) or (i == len(list_en_phonemes) - 1):
-            list_cmu_phonemes.append(list_en_phonemes[i])
-        else:
-            if (list_en_phonemes[i-1] in cmu_vowel) and (list_en_phonemes[i+1] in cmu_vowel):
-                    list_cmu_phonemes.append(list_en_phonemes[i])
-                    list_cmu_phonemes.append('|')
-                    list_cmu_phonemes.append(list_en_phonemes[i])
+    list_cmu_phonemes = []
+    
+    if 'abbrev' in list_en_phonemes:
+        for i in range(len(list_en_phonemes)):
+            if list_en_phonemes[i] in cmu_consonant:
+                list_cmu_phonemes.append('|')
+                list_cmu_phonemes.append(list_en_phonemes[i])
             else:
                 list_cmu_phonemes.append(list_en_phonemes[i])
+    else:
+        for i in range(len(list_en_phonemes)):
+            if i == 0:
+                #1st phonemes
+                list_cmu_phonemes.append(list_en_phonemes[i])
+            elif i == len(list_en_phonemes) - 1:
+                #last phonemes
+                if list_en_phonemes[i] in cmu_consonant:
+                    if list_en_phonemes[i-1] in cmu_consonant:
+                        list_cmu_phonemes.append('|')
+                        list_cmu_phonemes.append(list_en_phonemes[i])
+                    else:
+                        list_cmu_phonemes.append(list_en_phonemes[i])
+                else:
+                    list_cmu_phonemes.append(list_en_phonemes[i])
+            else:
+                #rest phonemes
+                if list_en_phonemes[i] in cmu_consonant:
+                    #con-con
+                    if list_en_phonemes[i-1] in cmu_consonant:
+                        if (list_en_phonemes[i] == 'R') and (list_en_phonemes[i-1] == 'T'):
+                            list_cmu_phonemes.append(list_en_phonemes[i])
+                        else:
+                            list_cmu_phonemes.append('|')
+                            list_cmu_phonemes.append(list_en_phonemes[i])
+                    #vow-con-vow
+                    elif (list_en_phonemes[i-1] in cmu_vowel) and (list_en_phonemes[i+1] in cmu_vowel):
+                        if list_en_phonemes[i] in cmu_con_:
+                            list_cmu_phonemes.append(list_en_phonemes[i])
+                            list_cmu_phonemes.append('|')
+                            list_cmu_phonemes.append(list_en_phonemes[i])
+                        else:
+                            list_cmu_phonemes.append('|')
+                            list_cmu_phonemes.append(list_en_phonemes[i])
+                    #vow-con-R
+                    elif (list_en_phonemes[i-1] in cmu_vowel) and (list_en_phonemes[i+1] == 'R'):
+                        list_cmu_phonemes.append('|')
+                        list_cmu_phonemes.append(list_en_phonemes[i])
+                    else:
+                        list_cmu_phonemes.append(list_en_phonemes[i])
+                else:
+                    #vow-vow
+                    if list_en_phonemes[i-1] in cmu_vowel:
+                        list_cmu_phonemes.append('|')
+                        list_cmu_phonemes.append(list_en_phonemes[i])
+                    else:
+                        list_cmu_phonemes.append(list_en_phonemes[i])
 
     cmu_phonemes = ' '.join(list_cmu_phonemes)
+    #print(cmu_phonemes)
     cmu_phonemes = cmu_phonemes.split(' | ')
-    
+
     for i in range(len(cmu_phonemes)):
-        cmu_pronounce = cmu_phonemes[i]
         if cmu_phonemes[i] == '':
             continue
         else:
-            cmu_phonemes[i] = convert_by_rules(cmu_pronounce)
+            cmu_phonemes[i] = convert_by_rules(cmu_phonemes[i])
+    
     cmu_phonemes = ' '.join(cmu_phonemes)
+    cmu_phonemes = ' '.join(cmu_phonemes.split())
         
     return cmu_phonemes
 
@@ -289,8 +238,8 @@ def en2vi(en_word):
         return result
     else:
         result = ""
-        phones1 = 'b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z'
-        phones2 = 'a|e|o|u|i'
+        phones1 = 'b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z'
+        phones2 = 'a|e|o|u|i|y'
         en_word = re.sub('(?P<id>{})(?P<id1>({})({}))'.format(phones2, phones1, phones2),
                       lambda x: x.group('id') + ' ' + x.group('id1'), en_word)
         en_word = re.sub('(?P<id>{})(?P<id1>({})({}))'.format(phones2, phones1, phones2),
@@ -304,7 +253,8 @@ def en2vi(en_word):
         if len(en_arr) > 1:
             for i in range(len(en_arr)):
                 result = read_en2vi(en_arr[i])
-                if result != None:
+                #khác none thì đọc
+                if result:
                     en_arr[i] = result
                 else:
                     try:
@@ -322,3 +272,5 @@ def en2vi(en_word):
                   result += LSEQ_DICT[char.upper()] + ' '
     result = ' '.join(result.split())   
     return result
+
+#text = 'a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|v|w|u|x|y|z'

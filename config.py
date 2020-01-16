@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 import os
 import pronouncing
+import pandas as pd
 
 from utils import load_dict
 
 CURDIR = os.path.dirname(__file__)
 
 LSEQ_DICT_PATH = os.path.join(CURDIR, 'dicts/LSEQ_DICT.txt')
+'''EN2VI'''
+EN2VI_OLD_DICT_PATH = os.path.join(CURDIR, 'dicts/EN2VI_OLD_DICT.txt')
 EN2VI_DICT_PATH = os.path.join(CURDIR, 'dicts/EN2VI_DICT.txt')
 EN2WORD_DICT_PATH = os.path.join(CURDIR, 'dicts/EN2WORD_DICT.txt')
 ABB_DICT_PATH = os.path.join(CURDIR, 'dicts/ABB_DICT.txt')
@@ -19,6 +22,8 @@ BRANCH_DICT_PATH = os.path.join(CURDIR, 'dicts/proper_name/BRANCH_DICT.txt')
 VI_WORDS_PATH = os.path.join(CURDIR, 'dicts/vietnamese_words.txt')
 
 LSEQ_DICT = load_dict(LSEQ_DICT_PATH)
+'''EN2VI'''
+EN2VI_OLD_DICT = load_dict(EN2VI_OLD_DICT_PATH)
 EN2VI_DICT = load_dict(EN2VI_DICT_PATH)
 ABB_DICT = load_dict(ABB_DICT_PATH)
 PUNC_DICT = load_dict(PUNC_DICT_PATH)
@@ -36,18 +41,31 @@ UNIT = list(UNIT_DICT.keys())
 PERSON = list(PERSON_DICT.keys())
 BRANCH = list(PERSON_DICT.keys())
 
+'''EN2VI'''
 POPULAR_EN2VI_DICT_PATH = os.path.join(CURDIR,  'dicts/popular_english_words.txt')
+
 CMUPHONE2VI_DICT_PATH = os.path.join(CURDIR,  'dicts/cmu_phones.txt')
+CMUPHONE2VI_OLD_DICT_PATH = os.path.join(CURDIR,  'dicts/cmu_phones_old.txt')
 
 cmuphone2vi_dict = load_dict(CMUPHONE2VI_DICT_PATH)
+cmuphone2vi_old_dict = load_dict(CMUPHONE2VI_OLD_DICT_PATH)
+
+'''EN2VI'''
+popular_en2vi_old_dict = load_dict(POPULAR_EN2VI_DICT_PATH)
 popular_en2vi_dict = load_dict(POPULAR_EN2VI_DICT_PATH)
+
 popular_en2word_dict = load_dict(EN2WORD_DICT_PATH)
 popular_branch_dict = load_dict(BRANCH_DICT_PATH)
 popular_person_dict = load_dict(PERSON_DICT_PATH)
 
+'''EN2VI'''
 popular_en2vi_dict.update(popular_branch_dict)
 popular_en2vi_dict.update(popular_person_dict)
 popular_en2vi_dict.update(EN2VI_DICT)
+
+popular_en2vi_old_dict.update(popular_branch_dict)
+popular_en2vi_old_dict.update(popular_person_dict)
+popular_en2vi_old_dict.update(EN2VI_OLD_DICT)
 
 list_enwords = pronouncing.cmudict.words()
 list_enwords.extend(popular_en2vi_dict.keys())
@@ -88,7 +106,7 @@ N_Tel = ['sđt', 'điện', 'thoại', 'phone', 'tele', 'telephone']
 N_1st_Tel = ['0162', '0163', '0164', '0165', '0166', '0167', '0168', '0169', '032', '033', '034', '035', '036', '037', '038', '039', '0120', '0121', '0122', '0126', '0128', '070', '079', '077', '076', '078', '0123', '0124', '0125', '0127', '0129', '083', '084', '085', '081', '082']
 #NSWs chứa - 
 N_Scr = ['trận', 'tranh', 'tỉ', 'kết', 'quả', 'thắng', 'thua', 'trước']
-N_Rng = ['cấp', 'kì', 'kỳ' , 'có', 'từ', 'mức', 'giây', 'giờ', 'phút', 'ngày', 'tháng', 'năm', '(', ')', 'trong', 'vòng', 'thập', 'niên', 'giai', 'đoạn', 'gấp', 'lần', 'tuổi', 'lệ', 'khoảng', 'ở', 'km', 'm', 'g', 'kg', 'từ', 'mm', 'cm']
+N_Rng = ['cấp', 'kì', 'kỳ' , 'có', 'từ', 'mức', 'giây', 'giờ', 'phút', 'ngày', 'tháng', 'năm', '(', ')', 'trong', 'vòng', 'thập', 'niên', 'giai', 'đoạn', 'gấp', 'lần', 'tuổi', 'khoảng', 'ở', 'km', 'm', 'g', 'kg', 'từ', 'mm', 'cm']
 #NSWs dạng tiền
 Money = ['$', 'S$', 'D', 'VND', 'USD', 'VNĐ', 'USĐ', '€', '£', '¥', 'Fr']
 #NSWs của dạng lwrd

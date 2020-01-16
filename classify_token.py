@@ -22,7 +22,7 @@ def classify_text(list_token):
                 for j in range(len(env)):
                     env[j] = env[j].lower()
                 label.append('NUMBERS')
-                #Token chứa :
+                #Token chứa:
                 if ':' in token:
                     if token.count('-') == 1:
                         label.append('NTIM')
@@ -70,7 +70,7 @@ def classify_text(list_token):
                             label[0] = 'OTHERS'
                             label.append('CSEQ')
                     #Token chứa / và -
-                    if '-' in token:
+                    elif '-' in token:
                         if token.count('-') == 1:
                             token = token.split('-')
                             token_ = token[0]
@@ -122,23 +122,25 @@ def classify_text(list_token):
                                     label.append('NFRC')
                                     break
                                 elif env[j] in N_Time:
-                                    if int (token_[0]) > 12:
-                                        label.append('NMON')
+                                    if int(token_[-1]) > 12:
+                                        if int(token_[0]) <= 12:
+                                            label.append('NMON')
+                                        else:
+                                            label[0] = 'OTHERS'
+                                            label.append('CSEQ')
                                     else:
-                                        label.append('NDAY')
+                                        if int(token_[0]) < 31:
+                                            label.append('NDAY')
+                                        else:
+                                            label[0] = 'OTHERS'
+                                            label.append('CSEQ')
                             if len(label) < 2:
-                                try:
-                                    if token == '24/7' or token == '24/24':
-                                        label.append('NFRC')
-                                    elif token in N_T_Spec:
-                                        label.append('NDAY')
-                                    elif int(token_[-1]) > 12 and (int(token_[-1]) > 0):
-                                        label.append('NMON')
-                                    else:
-                                        label.append('NFRC')
-                                except:
-                                    label[0] = 'OTHERS'
-                                    label.append('CSEQ')
+                                if token == '24/7' or token == '24/24':
+                                    label.append('NFRC')
+                                elif token in N_T_Spec:
+                                    label.append('NDAY')
+                                else:
+                                    label.append('NFRC')
                         else:
                             label.append('NFRC')
                 #Token chứa -
@@ -147,23 +149,18 @@ def classify_text(list_token):
                         label.append('NRNG')
                     else:
                         if token.count('-') == 1:
-                            for j in range(len(env)):
-                                if env[j] in N_Rng:
-                                    label.append('NRNG')
-                                    break
-                                elif env[j] in N_Scr:
-                                    label.append('NSCR')
-                                    break
-                                elif env[j] in N_Time:
-                                    try:
-                                        token_ = token.split('-')
-                                        if int(token_[-1]) > 12:
-                                            label.append('NMON')
-                                        else:
-                                            label.append('NDAY')
+                            if list_token[i-1][0].lower() == 'ngày':
+                                label.append('NDAY')
+                            elif list_token[i-1][0].lower() =='tháng':
+                                label.append('NMON')
+                            else:
+                                for j in range(len(env)):
+                                    if env[j] in N_Rng:
+                                        label.append('NRNG')
                                         break
-                                    except:
+                                    elif env[j] in N_Scr:
                                         label.append('NSCR')
+                                        break
                             if len(label) < 2:
                                 label.append('NSCR')
                         elif token.count('-') == 2:

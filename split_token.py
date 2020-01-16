@@ -42,8 +42,16 @@ def split_token(text):
         
         #split_punc = '\.|\,|\;|\/|\(|\)|\!|\?|\…|\:|\%|\-|\+'
         split_punc = '\.|\,|\…|\;|\/|\(|\)|\!|\?|\'|\"|\“|\”|\:|\+|\*|\\|\_|\&|\%|\^|\[|\]|\{|\}|\=|\#|\@|\`|\~'
+        # tách kí tự
         token = re.sub(r'(?P<id>[{}])(?P<id1>{})(?P<id2>[{}])'.format(charset, split_punc, charset),
                        lambda x: x.group('id') + ' ' + x.group('id1') + ' ' + x.group('id2'), token)
+        
+        token = re.sub(r'(?P<id>[{}])(?P<id1>{})(?P<id2>[{}]|\d+)'.format(charset, split_punc, charset),
+                       lambda x: x.group('id') + ' ' + x.group('id1') + ' ' + x.group('id2'), token)
+        token = re.sub(r'(?P<id>[{}]|\d+)(?P<id1>{})(?P<id2>[{}])'.format(charset, split_punc, charset),
+                       lambda x: x.group('id') + ' ' + x.group('id1') + ' ' + x.group('id2'), token)
+
+        #tách số
         token = re.sub(r'(?P<id>[{}]|\d+)(?P<id1>{})'.format(charset, split_punc),
                        lambda x: x.group('id') + ' ' + x.group('id1'), token)
         token = re.sub(r'(?P<id>{})(?P<id1>[{}]|\d+)'.format(split_punc, charset),
@@ -174,14 +182,24 @@ def edit_token(text):
             elif ('/' in token) and (':' in token):
                 list_tokens[i] = re.sub(r'\:', ' : ', token)
             elif ('/' in token) and ('-' in token) and (('.' in token) or (',' in token)):
-                list_tokens[i] = re.sun(r'\-', ' đến ', token)
+                list_tokens[i] = re.sub(r'\-', ' đến ', token)
             elif ('.' in token) and (',' in token):
                 list_tokens[i] = re.sub(r'\,', ' , ', token)
+            elif ('-' in token):
+                token_ = token.split('-')
+                for j in range(len(token_)):
+                    if re.match(r'[a-zA-Z]', token_[j]):
+                        list_tokens[i] = re.sub(r'\-', ' - ', token)
+                    elif token_[j] == '':
+                        list_tokens[i] = re.sub(r'\-', ' - ', token)
         else:
             if '-' in token:
                 token_ = token.split('-')
-                if '' in token_:
-                    list_tokens[i] = token.replace('-',' - ')
+                for j in range(len(token_)):
+                    if re.match(r'([0-9])', token_[j]):
+                        list_tokens[i] = re.sub(r'\-', ' - ', token)
+                    elif token_[j] == '':
+                        list_tokens[i] = re.sub(r'\-', ' - ', token)
     text = ' '.join(list_tokens)
     return text
 

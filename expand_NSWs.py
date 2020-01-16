@@ -8,7 +8,8 @@ from datetime import date
 
 from utils import load_dict
 from config import *
-from en2vi import *
+from en2vi import en2vi
+from en2vi_old import en2vi_old
 
 # hàm bignumread để xử lý số lớn mà thu viện num2words không xử lý được
 def bignumread(numberstring, index=0):
@@ -141,6 +142,8 @@ def DAT2words(date_string):
 #NDAT class
 def NDAT2words(ndat_string):
     result = ""
+    if ('-' in ndat_string) and ('/' not in ndat_string):
+        ndat_string = re.sub('-', '/', ndat_string)
     if '-' in ndat_string:
         ndat_arr = ndat_string.split('-')
         if ndat_string.count('/') == 4:
@@ -162,6 +165,8 @@ def NDAT2words(ndat_string):
 #NMON class
 def NMON2words(nmon_string):
     result = ""
+    if ('-' in nmon_string) and ('/' not in nmon_string):
+        nmon_string = re.sub('-', '/', nmon_string)
     if '-' in nmon_string:
         nmon_arr = nmon_string.split('-')
         if nmon_string.count('/') == 2:
@@ -175,6 +180,8 @@ def NMON2words(nmon_string):
 #NDAY class
 def NDAY2words(nday_string):
     result = ""
+    if ('-' in nday_string) and ('/' not in nday_string):
+        nday_string = re.sub('-', '/', nday_string)
     if '-' in nday_string:
         nday_arr = nday_string.split('-')
         if nday_string.count('/') == 2:
@@ -290,22 +297,15 @@ def NADD2words(nadd_string):
 def LWRD2words(lwrd_string):
     result = ""
     lwrd_string = lwrd_string.lower()
-    if lwrd_string in EN2VI_DICT.keys():
-        result = EN2VI_DICT[lwrd_string]
-    elif lwrd_string in PERSON_DICT.keys():
-        result = PERSON_DICT[lwrd_string]
-    elif lwrd_string in BRANCH_DICT.keys():
-        result = BRANCH_DICT[lwrd_string]
+    if '-' in lwrd_string:
+        lwrd_arr = lwrd_string.split('-')
+        for i in range(len(lwrd_arr)):
+            result += en2vi(lwrd_arr[i]) + ' '
+        result += '|'
+        for i in range(len(lwrd_arr)):
+            result += en2vi_old(lwrd_arr[i]) + ' '
     else:
-        if '-' in lwrd_string:
-            lwrd_arr = lwrd_string.split('-')
-            for i in range(len(lwrd_arr)):
-                if lwrd_arr[i].lower() in list_vietnamese_words:
-                    result += lwrd_arr[i] + ' '
-                else:
-                    result += LWRD2words(lwrd_arr[i]) + ' '
-        else:
-            result = en2vi(lwrd_string)
+        result = en2vi(lwrd_string) + '|' + en2vi_old(lwrd_string)
     return result
 
 #LSEQ class
