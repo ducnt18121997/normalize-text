@@ -2,6 +2,7 @@ VNĐ|việt nam đồng
 VND|việt nam đồng
 USD|đô la mĩ
 USĐ|đô la mĩ
+NDT|nhân dân tệ
 $|đô la
 S$|đô la sinh
 đ|đồng

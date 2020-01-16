@@ -1,6 +1,5 @@
 ABC|công ty truyền thông abc
 ADB|ngân hàng phát triển châu á
-ADN|a đê en
 ANĐT|an ninh điều tra
 ATGT|an toàn giao thông
 ATM|máy rút tiền tự động
@@ -49,10 +48,9 @@ BT|bảo trì, bộ trưởng
 BTA|hiệp định thương mại việt - mỹ
 BTBNN|bảo trợ bệnh nhân nghèo
 BTC|ban tổ chức
-BTS|ban tuyển sinh
 BTV|biên tập viên
 BTVH|bổ túc văn hóa
-BV|bện viện
+BV|bệnh viện
 BVĐK|bệnh viện đa khoa
 BVTV|bảo vệ thực vật
 BX|bến xe
@@ -88,7 +86,7 @@ CNTT|công nghệ thông tin
 CNV|công nhân viên
 CNVC|công nhân viên chức
 COPD|bệnh phổi tắc nghẽn mãn tính
-CP|cổ phần, cổ phiếu
+CP|cổ phần
 CPE|hợp đồng lao động đầu tiên
 CPH|cổ phần hóa
 CPP|đảng nhân dân campuchia
@@ -120,7 +118,7 @@ CSVC|cơ sở vật chất
 CSVL|cao su việt - lào
 CSVN|cộng sản việt nam
 CSXH|chính sách xã hội
-CT|chính trị, công ty
+CT|công ty, chính trị 
 CTCC|công trình công cộng
 CTCH|chấn thương chỉnh hình
 CTCK|công ty chứng khoán
@@ -157,14 +155,12 @@ DCCH|dân chủ cộng hòa
 DD|dân dụng, dinh dưỡng
 ĐD|đại diện
 ĐĐ|động đất, đất đai
-DDVN|duyên dáng việt nam
 ĐH|đại học
-ĐHBC|đại học bán công
 ĐHBK|đại học bách khoa
 ĐHBKHCM|đại học bách khoa thành phố hồ chí minh
 ĐHBKHN|đại học bách khoa hà nội
 ĐHBKTPHCM|đại học bách khoa thành phố hồ chí minh
-ĐHCĐ|đại hội cổ đông, đại học công đoàn
+ĐHCĐ|đại học công đoàn
 ĐHCLC|đại học chất lượng cao
 ĐHCN|đại học công nghệ
 ĐHCT|đại học cần thơ
@@ -198,7 +194,6 @@ DHS|du học sinh
 ĐKVĐ|đương kim vô địch
 ĐKVN|điền kinh việt nam
 ĐKXT|đăng ký xét tuyển
-DL|du lịch
 ĐL|đo lường
 ĐLTP|điện kế điện tử
 ĐMN|đá mỹ nghệ
@@ -615,8 +610,6 @@ RLCD|rối loạn cương dương
 SARS|sars, hội chứng hô hấp cấp tính nặng
 SBD|số báo danh
 SBS|công ty chứng khoán ngân hàng sài gòn thương tín
-SD|sử dụng
-SDĐ|sử dụng đất
 SDĐNN|sử dụng đất nông nghiệp
 SĐH|sau đại học
 SĐK|số đăng ký
@@ -646,7 +639,6 @@ SN|sinh năm, sinh ngày
 SNN|sở nông nghiệp
 SP|sư phạm, sản phẩm
 SPKT|sư phạm kỹ thuật
-SS|sĩ số
 SSA|hiệp hội tôm miền nam nước mỹ
 STB|ngân hàng thương mại cổ phần sài gòn thương tín
 SV|sinh viên
@@ -876,4 +868,4 @@ XX|xét xử
 YKVN|y khoa việt nam
 YTDP|y tế dự phòng
 YTế|y tế
-SEA|xi
+SEA|đông nam á

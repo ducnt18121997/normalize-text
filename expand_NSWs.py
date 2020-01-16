@@ -63,6 +63,7 @@ def NNUM2words(nnum_string):
             result = decimal2words(nnum_string)
         return result
     except:
+        result = CSEQ2words(nnum_string)
         return result
 
 #NTIM class
@@ -99,6 +100,8 @@ def NTIM2words(ntim_string):
         result = TIM2words(ntim_arr[0]) + " đến " + TIM2words(ntim_arr[1])
     else:
         result = TIM2words(ntim_string)
+    if result == "":
+        result = CSEQ2words(ntim_string)
     return result
 
 """ngày/tháng"""
@@ -160,6 +163,8 @@ def NDAT2words(ndat_string):
             result = dstring + " đến " + DAT2words(ndat_arr[1])
     else:
         result = DAT2words(ndat_string)
+    if result == "":
+        result = CSEQ2words(ndat_string)
     return result
 
 #NMON class
@@ -175,6 +180,8 @@ def NMON2words(nmon_string):
             result = NNUM2words(nmon_arr[0]) + " đến " + MON2words(nmon_arr[1])
     else:
         result = MON2words(nmon_string)
+    if result == "":
+        result = CSEQ2words(nmon_string)
     return result
 
 #NDAY class
@@ -195,6 +202,8 @@ def NDAY2words(nday_string):
             result = dstring + " đến " + DAY2words(nday_arr[1])
     else:
         result = DAY2words(nday_string)
+    if result == "":
+        result = CSEQ2words(nday_string)
     return result
 
 #NDIG class
@@ -204,6 +213,8 @@ def NDIG2words(ndig_string):
     for digit in ndig_string:
         if digit.isdigit():
             result += num2words(int(digit), lang='vi') + " "
+    if result == "":
+        result = CSEQ2words(ndig_string)
     return result
 
 #NTEL class
@@ -216,6 +227,8 @@ def NTEL2words(ntel_string):
         result = 'cộng ' + NDIG2words(ntel_string)
     else:
         result = NDIG2words(ntel_string)
+    if result == "":
+        result = CSEQ2words(ntel_string)
     return result
 
 #NSCR class
@@ -226,6 +239,8 @@ def NSCR2words(nscr_string):
     arr = nscr_string.split('-')
     if nscr_string.count('-') == 1:
         result = NNUM2words(arr[0]) + ' ' + NNUM2words(arr[1])
+    if result == "":
+        result = CSEQ2words(nscr_string)
     return result
 
 #NRNG class
@@ -233,6 +248,8 @@ def NRNG2words(nrng_string):
     """từ `2-3`"""
     nrng_string_arr = nrng_string.split('-')
     result = NNUM2words(nrng_string_arr[0]) + ' đến ' + NNUM2words(nrng_string_arr[1])
+    if result == "":
+        result = CSEQ2words(nrng_string)
     return result
 
 #NPER class
@@ -247,6 +264,8 @@ def NPER2words(nper_string):
     else:
         nper_string = re.sub('\%', '', nper_string)
         result = NNUM2words(nper_string) + " phần trăm "
+    if result == "":
+        result = CSEQ2words(nper_string)
     return result
 
 #NFRC class
@@ -269,6 +288,8 @@ def NFRC2words(nfrc_string):
                 result = NNUM2words(nfrc_arr[i])
             else:
                 result = ' trên ' + NNUM2words(nfrc_arr[i])
+    if result == "":
+        result = CSEQ2words(nfrc_string)
     return result
 
 #NADD class
@@ -289,6 +310,8 @@ def NADD2words(nadd_string):
                 result = 'ngõ ' + NNUM2words(nfrc_arr[i])
             else:
                 result = ' trên ' + NNUM2words(nfrc_arr[i])
+    if result == "":
+        result = CSEQ2words(nadd_string)
     return result
 """NUMBERS End"""
 
@@ -306,6 +329,8 @@ def LWRD2words(lwrd_string):
             result += en2vi_old(lwrd_arr[i]) + ' '
     else:
         result = en2vi(lwrd_string) + '|' + en2vi_old(lwrd_string)
+    if result == "":
+        result = CSEQ2words(lwrd_string)
     return result
 
 #LSEQ class
@@ -315,6 +340,8 @@ def LSEQ2words(lseq_string):
     for char in lseq_string:
         if char.upper() in (LSEQ_DICT.keys()):
             result += LSEQ_DICT[char.upper()] + ' '
+    if result == "":
+        result = CSEQ2words(lseq_string)
     return result
 
 #LABB class
@@ -329,6 +356,8 @@ def LABB2words(labb_string):
         result = CURRENCY_DICT[labb_string].split(',')[0]
     else:
         result = LSEQ2words(labb_string)
+    if result == "":
+        result = CSEQ2words(labb_string)
     return result
 """LETTERS End"""
 
@@ -358,6 +387,8 @@ def MONY2words(money_string):
             result += NNUM2words(money_arr[i])
         else:
             result += ' ' + money_arr[i]
+    if result == "":
+        result = CSEQ2words(money_string)
     return result
 
 #URLE class
@@ -407,8 +438,9 @@ def URLE2words(urle_string):
                                 newtoken += ' '
                                 k += 1
                 arr[i] = newtoken
-
     result = ' '.join(arr)
+    if result == "":
+        result = CSEQ2words(urle_string)
     return result
 
 #CSEQ class
