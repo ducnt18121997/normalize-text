@@ -1,6 +1,6 @@
 AA|a,a,a
 AE|a,a,a
-AH|a,ă,a
+AH|a,ă,ă
 AO|o,o,a
 AW|au,ao,ao
 AY|ai,ai,ai

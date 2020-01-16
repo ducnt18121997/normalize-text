@@ -610,6 +610,8 @@ RLCD|rối loạn cương dương
 SARS|sars, hội chứng hô hấp cấp tính nặng
 SBD|số báo danh
 SBS|công ty chứng khoán ngân hàng sài gòn thương tín
+SD|sử dụng
+SDĐ|sử dụng đất
 SDĐNN|sử dụng đất nông nghiệp
 SĐH|sau đại học
 SĐK|số đăng ký

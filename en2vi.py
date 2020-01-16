@@ -26,8 +26,8 @@ def convert_by_rules(en_pronounce):
 
     phones1 = 'au|ao|ai|ây|oi|âu'
     phones2 = 'b|p|ch|đ|d|ph|g|h|gi|k|c|l|m|n|ng|p|r|x|s|t|th|gu'
-    phones3 = 'a|ơ|ă|o|e|ê|i|ô|u'
-    phones4 = 'au|ao|ai|ây|oi|âu|a|ơ|ă|o|e|ê|ơ|i|ô|u'
+    phones3 = 'a|ă|â|ơ|o|ô|e|ê|i|y|u'
+    phones4 = 'au|ao|ai|ây|oi|âu|a|ơ|ă|o|e|ê|ơ|i|ô|u|y'
 
     phones2_ = 'gi|gu'
 
@@ -48,21 +48,21 @@ def convert_by_rules(en_pronounce):
                   lambda x: x.group('id'), temp)
                   
     #chỉnh sửa 1 số âm cuối 
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones1, 'l'),
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('e|ê', 'l'),
+                  lambda x: 'eo', temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('e|ê', 'l'),
+                  lambda x: 'eo', temp)
+
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('a|ă|â|o|ô|ơ', 'l'),
+                  lambda x: 'ồ', temp)
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('a|ă|â|o|ô|ơ', 'l'),
+                  lambda x: 'ồ', temp)
+
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('i|y|u', 'l'),
                   lambda x: x.group('id'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones1, 'l'),
+    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('i|y|u', 'l'),
                   lambda x: x.group('id'), temp)
 
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('e', 'l'),
-                  lambda x: x.group('id') + 'o', temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format('e', 'l'),
-                  lambda x: x.group('id') + 'o', temp)
-    
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones3, 'l'),
-                  lambda x: x.group('id'), temp)
-    temp = re.sub(r'(?P<id>{})(?P<id1>{})'.format(phones3, 'l'),
-                  lambda x: x.group('id'), temp)
-    
     # thêm dấu
     add_prosodic_dict = {
         'at':'át', 'ăt':'ắt', 'ât':'ất', 'et':'ét', 'êt':'ết', 'it':'ít', 'ot':'ót', 'ôt':'ốt', 'ơt':'ớt', 'ut':'út', 'ưt':'ứt', 'yt':'ýt',
@@ -70,7 +70,6 @@ def convert_by_rules(en_pronounce):
         'ap':'áp', 'ăp':'ắp', 'âp':'ấp', 'ep':'ép', 'êp':'ếp', 'ip':'íp', 'op':'óp', 'ôp':'ốp', 'ơp':'ớp', 'up':'úp', 'ưp':'ứp', 'yp':'ýp',   
     }
     temp = re.sub(r'(?P<id>{})'.format('|'.join(add_prosodic_dict.keys())), lambda x: add_prosodic_dict[x.group('id')], temp)
-
     return temp
 
 def convert_enword(en_pronounce):
@@ -124,7 +123,7 @@ def convert_enword(en_pronounce):
                             list_cmu_phonemes.append(list_en_phonemes[i])
                     #vow-con-vow
                     elif (list_en_phonemes[i-1] in cmu_vowel) and (list_en_phonemes[i+1] in cmu_vowel):
-                        if list_en_phonemes[i] in cmu_con_:
+                        if list_en_phonemes[i] in cmu_con__:
                             list_cmu_phonemes.append(list_en_phonemes[i])
                             list_cmu_phonemes.append('|')
                             list_cmu_phonemes.append(list_en_phonemes[i])
@@ -240,10 +239,17 @@ def en2vi(en_word):
         result = ""
         phones1 = 'b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z'
         phones2 = 'a|e|o|u|i|y'
+        
         en_word = re.sub('(?P<id>{})(?P<id1>({})({}))'.format(phones2, phones1, phones2),
                       lambda x: x.group('id') + ' ' + x.group('id1'), en_word)
         en_word = re.sub('(?P<id>{})(?P<id1>({})({}))'.format(phones2, phones1, phones2),
                       lambda x: x.group('id') + ' ' + x.group('id1'), en_word)
+        
+        en_word = re.sub('(?P<id>{})(?P<id1>({})({}))'.format(phones1, phones1, phones1),
+                      lambda x: x.group('id') + ' ' + x.group('id1'), en_word)
+        en_word = re.sub('(?P<id>{})(?P<id1>({})({}))'.format(phones1, phones1, phones1),
+                      lambda x: x.group('id') + ' ' + x.group('id1'), en_word)
+        
         en_word = re.sub('(?P<id>({})({}))(?P<id1>({})({}))'.format(phones2, phones1, phones1, phones2),
                       lambda x: x.group('id') + ' ' + x.group('id1'), en_word)
         en_word = re.sub('(?P<id>({})({}))(?P<id1>({})({}))'.format(phones2, phones1, phones1, phones2),
@@ -254,7 +260,7 @@ def en2vi(en_word):
             for i in range(len(en_arr)):
                 result = read_en2vi(en_arr[i])
                 #khác none thì đọc
-                if result:
+                if result != None:
                     en_arr[i] = result
                 else:
                     try:
@@ -272,5 +278,3 @@ def en2vi(en_word):
                   result += LSEQ_DICT[char.upper()] + ' '
     result = ' '.join(result.split())   
     return result
-
-#text = 'a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|v|w|u|x|y|z'
