@@ -19,7 +19,7 @@ def fix_punc(text, punc):
                         else:
                             if len(NSWs_[j]) % 3 != 0:
                                 if punc == '.':
-                                    NSWs = re.sub(r'\.', ' _',NSWs)
+                                    NSWs = re.sub(r'\.', ' ',NSWs)
                                     break
                                 else:
                                     NSWs = re.sub(punc, ' '+punc+' ',NSWs)
