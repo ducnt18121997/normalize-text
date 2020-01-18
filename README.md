@@ -7,6 +7,9 @@
 
 [GitHub-Sync]: https://github.com/ducnt18121997/normalize-text
 
+- chạy create_dict để tạo bộ từ điển đọc từ tiếng anh
+- normalize_text là hàm chính
+
 ## 1. Active Flow
 
 - normalize-text
