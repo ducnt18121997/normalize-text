@@ -33,6 +33,6 @@ def normalize(text):
     text = ' '.join(text.split())
     return text
 
-text = open('./vidu_1.txt').read()
+text = open('./vidu.txt').read()
 text = normalize(text)
 print(text)

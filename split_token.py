@@ -91,10 +91,10 @@ def split_token(text):
                   lambda x: x.group('id')+'/'+x.group('id1'), text)
     
     # 09 15 33 45 77 => 09.15.33.45.77, 035 164 4565 => 035.164.4565
-    text = re.sub(r'(?P<id>( |^|\,)\d+)\s+(?P<id1>\d+)( |$)',
+    '''text = re.sub(r'(?P<id>( |^|\,)\d+)\s+(?P<id1>\d+)( |$)',
               lambda x: x.group('id')+'.'+x.group('id1')+' ', text)
     text = re.sub(r'(?P<id>( |^|\,)\d+)\s+(?P<id1>\d+)( |$)',
-              lambda x: x.group('id')+'.'+x.group('id1') + ' ', text)
+              lambda x: x.group('id')+'.'+x.group('id1') + ' ', text)'''
     
     # 2, 3 => 2,3
     text = re.sub(r'(?P<id>( |^|\,)\d+)(\s+\,|\,s+|\s+\,\s+)(?P<id1>\d+( |^|\,))',

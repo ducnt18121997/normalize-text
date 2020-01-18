@@ -328,7 +328,7 @@ def LWRD2words(lwrd_string):
         for i in range(len(lwrd_arr)):
             result += en2vi_old(lwrd_arr[i]) + ' '
     else:
-        result = en2vi(lwrd_string) + '|' + en2vi_old(lwrd_string)
+        result = en2vi_old(lwrd_string)
     if result == "":
         result = CSEQ2words(lwrd_string)
     return result

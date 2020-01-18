@@ -1,0 +1,2 @@
+- chạy create_dict để tạo bộ từ điển đọc từ tiếng anh
+- normalize_text là hàm chính

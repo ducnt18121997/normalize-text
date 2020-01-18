@@ -246,5 +246,6 @@ def en2vi_old(en_word):
     if result != None:
         return result
     else:
-        result = latin_name2words_old(en_word) 
+        result = latin_name2words_old(en_word)
+    result = ' '.join(result.split())
     return result
