@@ -36,7 +36,7 @@ cond(no)->e
 - unicodedata
 
 ## 2. Function
-- config: chứa các dict và luật để phân loại và đọc các từ dạng NSW
+- config: chứa các dict và rule để phân loại và đọc các từ dạng NSW
 - create_dict: tạo thư viện đọc từ tiếng anh
 - en2vi: hàm xây dựng âm tiết với các từ tiếng anh(hiện đang sử dụng en2vi_old)
 - spit_token: tách riêng các NSW và các từ đọc được
