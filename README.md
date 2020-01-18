@@ -10,23 +10,7 @@
 - chạy create_dict để tạo bộ từ điển đọc từ tiếng anh
 - normalize_text là hàm chính
 
-## 1. Active Flow
-
-- normalize-text
-```flow
-st=>start: Đọc văn bản
-op1=>operation: Tách NSWs
-cond=>condition: NSW? Y/N
-op2=>operation: Phân loại NSWs
-op3=>operation: Thay thế NSWs
-e=>end
-
-st->op1->cond->op2->op3->e
-cond(yes)->op2
-cond(no)->e
-```
-
-## 2. Requirements
+## 1. Requirements
 
 - num2words
 - beautifulsoup4
