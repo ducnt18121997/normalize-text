@@ -10,23 +10,7 @@
 - chạy create_dict để tạo bộ từ điển đọc từ tiếng anh
 - normalize_text là hàm chính
 
-## 1. Active Flow
-
-- normalize-text
-```flow
-st=>start: Đọc văn bản
-op1=>operation: Tách NSWs
-cond=>condition: NSW? Y/N
-op2=>operation: Phân loại NSWs
-op3=>operation: Thay thế NSWs
-e=>end
-
-st->op1->cond->op2->op3->e
-cond(yes)->op2
-cond(no)->e
-```
-
-## 2. Requirements
+## 1. Requirements
 
 - num2words
 - beautifulsoup4
@@ -36,9 +20,9 @@ cond(no)->e
 - unicodedata
 
 ## 2. Function
-- config: chứa các dict và luật để phân loại và đọc các từ dạng NSW
+- config: chứa các dict và rule để phân loại và đọc các từ dạng NSW
 - create_dict: tạo thư viện đọc từ tiếng anh
-- en2vi: hàm xây dựng âm tiết với các từ tiếng anh(hiện đang sử dụng en2vi_old)
+- en2vi: hàm xây dựng âm tiết với các từ tiếng anh (hiện đang sử dụng en2vi_old)
 - spit_token: tách riêng các NSW và các từ đọc được
 - expand_NSWs: hàm đọc các loại NSW đã phân loại
 - classify_token: hàm phân loại các NSW
